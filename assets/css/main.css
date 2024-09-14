@@ -3,7 +3,7 @@
     /* warna */
     --color-black-light: #393939; 
     --color-black-medium: #2C2C2C;
-    --color-black-dark: #111111;
+    --color-black-dark: #000000;
     --color-white: #FFFFFF;
     --color-grey-dark: #707070;
     --color-grey: #565656;
@@ -37,7 +37,7 @@
     --font-size-h4: clamp(0.85rem, 3vw, 1rem);  /* H4 akan berubah dari 0.85rem hingga 1rem */
     --font-size-h5: clamp(0.7rem, 2.5vw, 0.85rem); /* H5 akan berubah dari 0.7rem hingga 0.85rem */
     --font-size-h6: clamp(0.5rem, 2vw, 0.7rem); /* H6 akan berubah dari 0.5rem hingga 0.7rem */
-    --font-size-p: clamp(0.9375rem, 3vw, 1rem); /* Paragraf akan berubah dari 15px (0.9375rem) hingga 1rem */
+    --font-size-p: clamp(16px, 3vw, 18px); /* Paragraf akan berubah dari 15px (0.9375rem) hingga 1rem */
 }
 
 /*=============== BASE ===============*/
@@ -503,7 +503,7 @@ footer {
             animation: left-move 20s linear infinite;
 }
 .announcement-bar-scroll-content span {
-    color: var(--color-black-light);
+    color: var(--color-black-dark);
     white-space: nowrap;
     line-height: 1em;
 }
@@ -566,7 +566,7 @@ footer {
     font-weight: bold;
 }
 .top-page p{
-    color: var(--color-black-medium);
+    color: var(--color-black-dark);
     font-style: italic;
 }
 /*============ END OF TOP PAGE =============*/
@@ -603,7 +603,7 @@ footer {
     border-radius: 50px;
 }
 .call-to-action-wrapper p {
-    color: var(--color-black-light);
+    color: var(--color-black-dark);
     font-weight: 400;
     line-height: 25px;
 }
@@ -1123,8 +1123,8 @@ footer {
             justify-content: center;
     cursor: pointer;
     font-size: 30px;
-    color: var(--color-black-medium) !important;
-    border: 2px solid var(--color-black-medium);
+    color: var(--color-black-dark) !important;
+    border: 2px solid var(--color-black-dark);
     border-radius: 50px;
     padding: 12px 12px;
     right: 0 !important;
@@ -1135,7 +1135,7 @@ footer {
             user-select: none;
 }
 .circle-button:hover {
-    background-color: var(--color-black-medium);
+    background-color: var(--color-black-dark);
     color: var(--color-gold) !important;
     -webkit-transition: all .42s ease;
     -o-transition: all .42s ease;
@@ -1147,7 +1147,7 @@ footer {
     top: calc(50% - 20px) !important;
     background-color: var(--color-white);
     font-size: 1rem;
-    color: var(--color-black-medium) !important;
+    color: var(--color-black-dark) !important;
     width: 40px !important;
     height: 40px !important;
     margin: 0 !important;
@@ -1401,7 +1401,7 @@ footer {
     gap: 1rem;
 }
 .accordion-content p {
-    color: var(--color-black-medium);
+    color: var(--color-black-dark);
 }
 .accordion-content-list {
     list-style: none;
@@ -1428,7 +1428,7 @@ footer {
     margin-right: 10px;
     font-size: 14px;
     font-weight: bold;
-    color: var(--color-black-medium);
+    color: var(--color-black-dark);
     line-height: 1.5;
 }
 /*=========== END OF ACCORDION ===========*/
@@ -1438,7 +1438,7 @@ footer {
 /* TABLET LANDSCAPE */
 @media (max-width: 768px) {
     section, footer {
-        padding: 10%;
+        padding: 10% 5%;
     }
     .header-height {
         padding-top: 60px;

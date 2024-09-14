@@ -36,7 +36,7 @@
     width: 100%;
 }
 .product-info h1 {
-    color: var(--color-black-medium);
+    color: var(--color-black-dark);
 }
 .product-info h2 {
     color: #555;
@@ -139,7 +139,7 @@
     cursor: pointer;
 }
 .gallery-thumb-slider-scrollbar-drag {
-    background-color: var(--color-black-medium) !important;
+    background-color: var(--color-black-dark) !important;
     border-radius: 4px;
 }
 .gallery-thumb-slider-scrollbar:hover .gallery-thumb-slider-scrollbar-drag:hover {
@@ -220,7 +220,7 @@
     gap: 1rem;
 }
 .accordion-content-harga p {
-    color: var(--color-black-medium);
+    color: var(--color-black-dark);
 }
 /*=========== END OF ACCORDION HARGA ===========*/
 
@@ -311,7 +311,7 @@ dd {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    color: var(--color-black-medium);
+    color: var(--color-black-dark);
 }
 /* end of specification table */
 

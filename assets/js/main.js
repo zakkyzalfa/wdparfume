@@ -160,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.querySelector(".nav-icon")) {
         gsap.from(".nav-icon", {
             duration: 1,
-            y: -20,
             opacity: 0,
             ease: "power3.out",
             delay: 0.8

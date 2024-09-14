@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Temukan produk perawatan kulit terbaik di toko kecantikan online kami. Produk berkualitas dan harga terjangkau.">
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/hero.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/productdisplay.css">
+
+    <!-- TITLE WEBSITE -->
+    <link rel="icon" href="../assets/images/logo.jpg" />
+    <title>WD Parfume | Parfum Eksotis</title>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Lotion Alami",
+          "description": "Lotion alami yang melembapkan kulit."
+        }
+    </script>
+
+    <!-- FONT GOOGLEAPIS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"> <!-- Jost -->
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet"> <!-- EB Garamond -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet"> <!-- Rubik -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Noto Sans JP -->
+
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="header-height">
+
+    <!-- HEADER NAVIGASTION BAR -->
+    <header class="navigation-bar">
+        <div class="logo-wrapper">
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/wd-logo.png" alt="WD Parfume Logo">
+            </a>
+        </div>
+        <div class="main-navigation">
+            <nav class="main-navigation-wrapper">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="../index.html" aria-label="Home" id="nav-home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html" aria-label="Products" id="nav-product">
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" aria-label="About us" id="nav-contact">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html" class="active" aria-label="Update" id="nav-update">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="panel-footer">
+                <ul class="nav-menu-social-media">
+                    <li>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on Facebook">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on TikTok">
+                            <i class='bx bxl-tiktok'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on Shopee">
+                            <i class='bx bx-shopping-bag'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-icon"> <!--right navbar-->
+
+            <a href="contact.html" aria-label="Contact">
+                <i class='bx bx-phone'></i>
+            </a>
+
+            <div class="search-icon">
+                <i class="bx bx-search" id="search-button"></i>
+            </div>
+
+            <div class="menu-icon">
+                <i class="bx bx-menu-alt-right" id="menu-icon"></i>
+            </div>
+        </div>
+    </header>
+    <!-- SEARCH BOX -->
+    <div id="overlay"></div>
+    <div class="search-box" id="search-content">
+        <div class="wrapper-search-box">
+            <form class="search-form">
+                <input type="text" placeholder="Cari nama produk...">
+                <i class="bx bx-x close" id="search-close"></i>
+            </form>
+            <div class="search-box2" data-lenis-prevent>
+                <!-- displaySearchReasult akan ditampilkan disini oleh javascript -->
+            </div>
+        </div>
+    </div>
+    <!-- END OF HEADER NAVIGASTION BAR -->
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="announcement-bar-scroll-content">
+            <span class="announcement-bar-item">
+                <p>Rasakan Sensasi menggunakan Parfum Mewah dengan Harga yang Sangat Terjangkau</p>
+                <span class="shape-circle"></span>
+                <p>Terinspirasi oleh Bibit Parfum Premium dengan Kualitas yang Terjaga Sepenuhnya</p>
+                <span class="shape-circle"></span>
+                <p>Tetaplah Memikat dan Harum Sepanjang Hari</p>
+                <span class="shape-circle"></span>
+            </span>
+            <span class="announcement-bar-item">
+                <p>Rasakan Sensasi menggunakan Parfum Mewah dengan Harga yang Sangat Terjangkau</p>
+                <span class="shape-circle"></span>
+                <p>Terinspirasi oleh Bibit Parfum Premium dengan Kualitas yang Terjaga Sepenuhnya</p>
+                <span class="shape-circle"></span>
+                <p>Tetaplah Memikat dan Harum Sepanjang Hari</p>
+                <span class="shape-circle"></span>
+            </span>
+            <span class="announcement-bar-item">
+                <p>Rasakan Sensasi menggunakan Parfum Mewah dengan Harga yang Sangat Terjangkau</p>
+                <span class="shape-circle"></span>
+                <p>Terinspirasi oleh Bibit Parfum Premium dengan Kualitas yang Terjaga Sepenuhnya</p>
+                <span class="shape-circle"></span>
+                <p>Tetaplah Memikat dan Harum Sepanjang Hari</p>
+                <span class="shape-circle"></span>
+            </span>
+        </div>
+    </div>
+    <!-- END OF ANNOUNCEMENT BAR -->
+
+    <!-- TOP PAGE SECTION -->
+    <!-- <section class="top-page">
+        <div class="top-page-wrapper">
+            <h3>Extrait De Parfume</h3>
+            <h1>WD PARFUME</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos aperiam obcaecati minima sapiente
+                rerum enim officiis, omnis exercitationem architecto!
+            </p>
+            <p>Lihat Selengkapnya..</p>
+            <div class="center-button">
+                <a href="#" class="main-button" aria-label="About us">
+                    About us <i class='bx bx-down-arrow-alt'></i>
+                </a>
+            </div>
+        </div>
+    </section> -->
+    <!-- END OF TOP PAGE SECTION-->
+
+    <!-- <div class="section-separator">
+        <hr class="separator">
+    </div> -->
+
+    <!-- FAQ SECTION -->
+    <section class="faq">
+        <div class="faq-wrapper">
+            <div class="heading-center">
+                <p>Pertanyaan Yang Sering Ditanyakan</p>
+                <h2>Kualitas Produk Kami</h2>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-accordion-wrapper">
+                    <div class="faq-accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">Apakah parfum WD Parfume tahan lama?</span>
+                            <span class="circle-chevron">
+                                <i class='bx bx-chevron-down'></i>
+                            </span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                Ya, parfum WD Parfume dirancang dengan formula khusus untuk memastikan aromanya bertahan lama, hingga 12 jam atau lebih tergantung aktivitas dan kondisi kulit Anda. ✨
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">Apakah produk WD Parfume aman untuk kulit sensitif?</span>
+                            <span class="circle-chevron">
+                                <i class='bx bx-chevron-down'></i>
+                            </span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                Kami menggunakan bahan-bahan yang ramah kulit dan hypoallergenic, sehingga aman untuk semua jenis kulit. Kami juga merekomendasikan uji coba kecil sebelum penggunaan penuh jika Anda memiliki kulit sensitif. 🥰😍
+                            </p>
+                            <p>
+                                Kami sangat memahami bahwa setiap orang memiliki jenis kulit yang berbeda, dan itulah mengapa kami merancang parfum kami dengan bahan-bahan yang lembut dan aman untuk kulit sensitif. Produk WD Parfume dibuat tanpa menggunakan bahan kimia berbahaya, sehingga mengurangi risiko iritasi pada kulit. Meski begitu, kami tetap menyarankan untuk melakukan uji tempel kecil pada kulit sebelum penggunaan penuh, terutama jika Anda memiliki riwayat kulit sensitif. Kepuasan dan kenyamanan pelanggan selalu menjadi prioritas utama kami.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">Apa kemasan yang digunakan pada produk WD Parfume?</span>
+                            <span class="circle-chevron">
+                                <i class='bx bx-chevron-down'></i>
+                            </span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                Produk menggunakan botol kaca dan kotak pada setiap botolnya untuk melindungi kualitas produk. Kemasan kami juga menggunakan bahan ramah lingkungan, karena kami berkomitmen untuk menjaga keindahan alam sekaligus menawarkan produk berkualitas tinggi. ✨
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">Bahan apa yang digunakan untuk pada produk WD Parfume?</span>
+                            <span class="circle-chevron">
+                                <i class='bx bx-chevron-down'></i>
+                            </span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                Kami hanya menggunakan bahan terbaik berkualitas tinggi, termasuk esensi alami dan bahan-bahan premium yang menjaga aroma tetap segar dan elegan. ✨
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">Jenis Parfume apa yang digunakan? Extrait de Parfume atau Eau de Parfume?</span>
+                            <span class="circle-chevron">
+                                <i class='bx bx-chevron-down'></i>
+                            </span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Extrait de Parfume. 😍</p>
+                            <p>
+                                Extrait de Parfume adalah jenis parfume uang memiliki konsentrasi minyak tertinggi yakni 30-40% dengan ketahanan aroma sepanjang hari.
+                            </p>
+                            <p>Tapi..</p>
+                            <p>
+                                WD Parfume terbuat dengan konsentrasi minyak sebesar 60% yang membuat aromanya semakin wangi dengan ketahanan aroma sepanjang hari. 🥰✨
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">Apa saja varian dari produk WD Parfume?</span>
+                            <span class="circle-chevron">
+                                <i class='bx bx-chevron-down'></i>
+                            </span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>kami memiliki beberapa varian parfume. ✨</p>
+                            <ul class="accordion-content-list">
+                                <li>
+                                    UNISEX
+                                </li>
+                                <li>
+                                    WOMAN
+                                </li>
+                                <li>
+                                    MAN
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">Apa yang membuat produk WD Parfume Special daripada produk lain?</span>
+                            <span class="circle-chevron">
+                                <i class='bx bx-chevron-down'></i>
+                            </span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                WD Parfume adalah produk kualitas tinggi dengan harga yang terjangkau. Kami menggunakan bahan-bahan premium yang sama dengan parfum internasional, WD Parfume mampu bertahan hingga 12 jam, tetapi menawarkan kepada Anda kemewahan ini tanpa perlu membayar mahal. WD Parfume menghadirkan berbagai pilihan aroma yang dapat disesuaikan dengan kepribadian dan gaya hidup Anda. Itulah yang menjadikan produk WD Parfume sangat istimewa dan dicintai oleh pelanggan kami. 🥰✨
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- END OF FAQ SECTION -->
+
+    <!-- FAQ SECTION -->
+    <section class="faq">
+        <div class="faq-wrapper">
+            <div class="heading-center">
+                <p>Pertanyaan Yang Sering Ditanyakan</p>
+                <h2>Ketentuan dan Cara Pembelian</h2>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-accordion-wrapper">
+                    <div class="faq-accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">Bagaimana saya bisa membeli produk WD Parfume?</span>
+                            <span class="circle-chevron">
+                                <i class='bx bx-chevron-down'></i>
+                            </span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                Kamu bisa membeli produk kami melalui Shopee, Tiktok Shop, atau langsung menghubungi kami melalui WhatsApp untuk pembelian dan juga jika anda ingin bertanya tanya. 😉🤗
+                            </p>
+                            <p>
+                        
+                            </p>
+                            <ul class="accordion-content-list">
+                                <p>
+                                    Beli di Shopee
+                                </p>
+                                <li>
+                                    Dengan menekan tombol "Beli di Shopee" kamu akan langsung di arahkan ke link shopee untuk membeli product tersebut. setelah kamu berada di halaman product shopee, kamu bisa melakukan pembelian seperti biasanya di shopee dengan cara klik tombol beli di shopee dan jangan lupa untuk memilih jenis parfume apa yang kamu mau, kamu juga bisa menambahkan jumlah product yang kamu ingin beli.
+                                </li>
+                                <p>
+                                    Beli di TikTok Shop
+                                </p>
+                                <li>
+                                    Dengan menekan tombol "Beli di TikTok Shop" dan kamu akan diarahkan ke halaman produk kami di platform tersebut. Sama seperti di Shopee, pilih jenis parfum yang Anda inginkan, tambahkan jumlah produk, dan lakukan pembelian dengan mudah.
+                                </li>
+                                <p>
+                                    Chat Langsung WhatsApp
+                                </p>
+                                <li>
+                                    Kamu juga bisa membelinya, melalui chat langsung ke WhatsApp, tombol "Chat WhatsApp"
+                                    kamu akan langsung di arahkan ke kontak WhatsApp WD Parfume untuk membeli product
+                                    tersebut. Kamu bisa langsung menanyakan detail produk dan melakukan pembelian secara langsung.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">Bagaimana dengan pengiriman pesanan saya?</span>
+                            <span class="circle-chevron">
+                                <i class='bx bx-chevron-down'></i>
+                            </span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>kami memproses dan mengirimkan pesanan Anda secepat mungkin. 👍🚚</p>
+                            <ul class="accordion-content-list">
+                                <li>
+                                    Agar paket Aman sampai ketangan customer, Lebih baik menambahkan extra bubble
+                                    wrap untuk pengiriman di luar kota Pekanbaru atau pembelian 1 pcs atau lebih
+                                    dari 1 pcs. Jika barang pecah tanpa menggunakan bubble wrap bukan tanggung jawab
+                                    kami.
+                                </li>
+                                <li>
+                                    Kamu bisa menambahkan bubble wrap pada produk shoppe kami, atau kamu bisa meminta untuk menambahkan bubble wrap di chat shoppe maupun WhatsApp
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <div class="accordion-header">
+                            <span class="accordion-header-text">Apakah ada discount dari harga original pada produk?</span>
+                            <span class="circle-chevron">
+                                <i class='bx bx-chevron-down'></i>
+                            </span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                Ya! kamu bisa menggunakan Voucher Discount, Voucher Gratis Ongkir, Voucher Cashback, dan Koin Shopee, yang kamu miliki di Shopee ataupun platform lain seperti TikTok Shop, untuk mendapatkan potongan harga dari harga original kami. 🤩🥰
+                            </p>
+                            <p>
+                                Pastikan kamu follow akun kami di media sosial untuk mendapatkan info promo terbaru. 😉🤗
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- END OF FAQ SECTION -->
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-info-wrapper">
+            <div class="first-info">
+                <div class="logo-wrapper-footer">
+                    <a href="../index.html" class="logo-footer">
+                        <img src="../assets/images/wd-logo.png" alt="WD Parfume Logo">
+                    </a>
+                </div>
+                <ul class="navmenu-footer">
+                    <li>
+                        <a href="../index.html" class="footer-link" aria-label="Home" id="nav-home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/products.html" class="footer-link" aria-label="Products"
+                            id="nav-product">
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html" class="footer-link" aria-label="About us" id="nav-contact">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/faq.html" class="footer-link" aria-label="Update" id="nav-update">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer-text">
+                    <p>
+                        Terima kasih telah berkunjung ke website wd parfume! Jangan ragu untuk menghubungi kami atau ikuti media sosial untuk mendapatkan informasi terbaru! Ditunggu ordernya ya!
+                    </p>
+                </div>
+                <div class="social-icon">
+                    <ul class="nav-menu-social-media">
+                        <li>
+                            <a href="https://www.facebook.com/widya.va.9" target="_blank" rel="noopener" aria-label="Follow on Facebook">
+                                <i class='bx bxl-facebook-circle'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/wd.official.id" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@wdparfume1" target="_blank" rel="noopener" aria-label="Follow on TikTok">
+                                <i class='bx bxl-tiktok'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://shopee.co.id/widyaraesa" target="_blank" rel="noopener" aria-label="Follow on Shopee">
+                                <i class='bx bx-shopping-bag'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-info">
+                <div class="footer-navigation-wrapper">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <a href="../pages/contact.html" class="footer-link" aria-label="Contact">
+                                Contact<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/62?text=Halo,%20Kak." target="_blank" class="footer-link" rel="noopener" aria-label="WhatsApp">
+                                WhatsApp<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-navigation-wrapper">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li>
+                            <a href="https://shopee.co.id/widyaraesa" target="_blank" class="footer-link" rel="noopener" aria-label="Shopee">
+                                Shopee<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@wdparfume1" target="_blank" class="footer-link" rel="noopener" aria-label="Tiktok Shop">
+                                TikTok Shop<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-navigation-wrapper">
+                    <h4>Media Sosial</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/widya.va.9" target="_blank" class="footer-link" rel="noopener" aria-label="Facebook">
+                                Facebook<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/wd.official.id" target="_blank" class="footer-link" rel="noopener" aria-label="Instagram">
+                                Instagram<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@wdparfume1" target="_blank" class="footer-link" rel="noopener" aria-label="TikTok">
+                                TikTok<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot-copy">
+            <p>&copy; 2024 WD Parfume.</p>
+        </div>
+    </footer>
+    <!-- END OF FOOTER -->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/slider.js"></script>
+
+    <!-- EMBED INSTAGRAM -->
+    <script async src="//www.instagram.com/embed.js"></script>
+
+    <!-- GSAP (ANIMATION) -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- LENIS (SMOOTH ON SCROLL) -->
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+
+    <script>
+        
+    </script>
+
+</body>
+
+</html>

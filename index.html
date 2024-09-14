@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Temukan produk perawatan kulit terbaik di toko kecantikan online kami. Produk berkualitas dan harga terjangkau.">
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/productdisplay.css">
+
+    <!-- TITLE WEBSITE -->
+    <link rel="icon" href="assets/images/logo.jpg" />
+    <title>WD Parfume | Parfum Eksotis</title>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Lotion Alami",
+          "description": "Lotion alami yang melembapkan kulit."
+        }
+    </script>
+
+    <!-- FONT GOOGLEAPIS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"> <!-- Jost -->
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet"> <!-- EB Garamond -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet"> <!-- Rubik -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Noto Sans JP -->
+
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="page-with-hero-section">
+
+    <!-- HEADER NAVIGASTION BAR -->
+    <header class="navigation-bar">
+        <div class="logo-wrapper">
+            <a href="index.html" class="logo">
+                <img src="assets/images/wd-logo.png" alt="WD Parfume Logo">
+            </a>
+        </div>
+        <div class="main-navigation">
+            <nav class="main-navigation-wrapper">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html" class="active" aria-label="Home" id="nav-home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/products.html" aria-label="Products" id="nav-product">
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/about.html" aria-label="About us" id="nav-contact">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/faq.html" aria-label="Update" id="nav-update">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="panel-footer">
+                <ul class="nav-menu-social-media">
+                    <li>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on Facebook">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on TikTok">
+                            <i class='bx bxl-tiktok'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on Shopee">
+                            <i class='bx bx-shopping-bag'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-icon"> <!--right navbar-->
+
+            <a href="pages/contact.html" aria-label="Contact">
+                <i class='bx bx-phone'></i>
+            </a>
+
+            <div class="search-icon">
+                <i class="bx bx-search" id="search-button"></i>
+            </div>
+
+            <div class="menu-icon">
+                <i class="bx bx-menu-alt-right" id="menu-icon"></i>
+            </div>
+        </div>
+    </header>
+    <!-- SEARCH BOX -->
+    <div id="overlay"></div>
+    <div class="search-box" id="search-content">
+        <div class="wrapper-search-box">
+            <form class="search-form">
+                <input type="text" placeholder="Cari nama produk...">
+                <i class="bx bx-x close" id="search-close"></i>
+            </form>
+            <div class="search-box2" data-lenis-prevent>
+                <!-- displaySearchReasult akan ditampilkan disini oleh javascript -->
+            </div>
+        </div>
+    </div>
+    <!-- END OF HEADER NAVIGASTION BAR -->
+
+    <!-- HERO SECTION -->
+    <!-- PC SCREEN -->
+    <div class="swiper-container banner-container">
+        <div class="swiper-wrapper banner-wrapper">
+            <!-- SLIDE 1 -->
+            <div class="swiper-slide banner-slide">
+                <div class="banner-content banner-content-left">
+                    <h5>Extrait De Parfume</h5>
+                    <h1>
+                        <span class="anim-text-1">WD</span>
+                        <br>
+                        <span class="anim-text-2">PARFUME</span>
+                    </h1>
+                    <p class="anim-text-3">
+                        Terinspirasi dari brand mewah, WD Parfume diracik dari bahan-bahan terbaik untuk memberikan pengalaman wewangian premium.
+                    </p>
+                    <div class="button">
+                        <a href="pages/products.html" class="main-button button-hero" aria-label="all product">
+                            Checkout Sekarang<i class='bx bx-shopping-bag'></i>
+                        </a>
+                    </div>
+                </div>
+                <img src="assets/images/banner.PNG" class="banner-image"
+                    alt="Berbagai jenis parfum WD termasuk EDT dan EDP dalam kemasan berbeda">
+            </div>
+            <!-- SLIDE 2 -->
+            <div class="swiper-slide banner-slide">
+                <div class="banner-content banner-content-right">
+                    <h5>Extrait De Parfume</h5>
+                    <h1>
+                        <span class="anim-text-1">WD</span>
+                        <br>
+                        <span class="anim-text-2">PARFUME</span>
+                    </h1>
+                    <p class="anim-text-3">
+                        Nikmati aroma tahan lama yang bertahan hingga 12 jam, menjaga Anda tetap segar, anggun, dan memikat sepanjang hari
+                    </p>
+                    <div class="button">
+                        <a href="pages/products.html" class="main-button" aria-label="all product">
+                            Checkout Sekarang<i class='bx bx-shopping-bag'></i>
+                        </a>
+                    </div>
+                </div>
+                <img src="assets/images/banner-4.PNG" class="banner-image left-banner-image"
+                    alt="MOY Woman dengan desain estetik">
+            </div>
+            <!-- Tambahkan slide lainnya sesuai kebutuhan -->
+        </div>
+        <div class="pagination">
+            <div class="swiper-pagination banner-pagination"></div>
+        </div>
+    </div>
+    <!-- MOBILE SCREEN -->
+    <div id="home" class="mobile-cta">
+        <div class="mobile-cta-slider-container">
+            <div class="cta-overlay">
+                <h5 class="brand-text-1">Extrait De Parfume</h5>
+                <h1 class="brand-text-2">WD PARFUME</h1>
+            </div>
+            <div class="mobile-cta-slider" id="slider">
+                <div class="mobile-cta-slider-slide">
+                    <img src="assets/images/mobile-cta-1.jpg" alt="DELIN WOMAN Dengan sensasi aroma Rose yang manis">
+                </div>
+                <div class="mobile-cta-slider-slide">
+                    <img src="assets/images/mobile-cta-2.jpg" alt="BACCA TOP tampil dengan percaya diri">
+                </div>
+                <div class="mobile-cta-slider-slide">
+                    <img src="assets/images/mobile-cta-3.jpg" alt="MOY Woman dengan desain estetik">
+                </div>
+                <div class="mobile-cta-slider-slide">
+                    <img src="assets/images/mobile-cta-4.jpg"
+                        alt="Rainbow Love Woman hadir dengan perpaduan aroma yang manis">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF HERO SECTION -->
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="announcement-bar-scroll-content">
+            <span class="announcement-bar-item">
+                <p>Rasakan Sensasi menggunakan Parfum Mewah dengan Harga yang Sangat Terjangkau</p>
+                <span class="shape-circle"></span>
+                <p>Terinspirasi oleh Bibit Parfum Premium dengan Kualitas yang Terjaga Sepenuhnya</p>
+                <span class="shape-circle"></span>
+                <p>Tetaplah Memikat dan Harum Sepanjang Hari</p>
+                <span class="shape-circle"></span>
+            </span>
+            <span class="announcement-bar-item">
+                <p>Rasakan Sensasi menggunakan Parfum Mewah dengan Harga yang Sangat Terjangkau</p>
+                <span class="shape-circle"></span>
+                <p>Terinspirasi oleh Bibit Parfum Premium dengan Kualitas yang Terjaga Sepenuhnya</p>
+                <span class="shape-circle"></span>
+                <p>Tetaplah Memikat dan Harum Sepanjang Hari</p>
+                <span class="shape-circle"></span>
+            </span>
+            <span class="announcement-bar-item">
+                <p>Rasakan Sensasi menggunakan Parfum Mewah dengan Harga yang Sangat Terjangkau</p>
+                <span class="shape-circle"></span>
+                <p>Terinspirasi oleh Bibit Parfum Premium dengan Kualitas yang Terjaga Sepenuhnya</p>
+                <span class="shape-circle"></span>
+                <p>Tetaplah Memikat dan Harum Sepanjang Hari</p>
+                <span class="shape-circle"></span>
+            </span>
+        </div>
+    </div>
+    <!-- END OF ANNOUNCEMENT BAR -->
+
+    <!-- TOP PAGE SECTION -->
+    <section class="top-page">
+        <div class="top-page-wrapper">
+            <h4>A Perfect Blend of Elegance and Affordability</h4>
+            <h1>Tentang Kami</h1>
+            <p>
+                WD Parfume adalah Parfume yang terinspirasi dari Parfume internasional dengan wangi yang exclusive dan tahan lama.
+            </p>
+            <p>Lihat Selengkapnya..</p>
+            <div class="center-button">
+                <a href="#" class="main-button" aria-label="About us">
+                    About us<i class='bx bx-notepad'></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END OF TOP PAGE SECTION-->
+
+    <div class="section-separator mobile-only">
+        <hr class="separator">
+    </div>
+
+    <div id="home" class="mobile-only">
+        <section class="products-slider">
+            <div class="swiper-with-pagination">
+                <div class="products-heading">
+                    <div class="heading">
+                        <h3>Parfumes</h3>
+                        <h2>Our Products</h2>
+                    </div>
+                    <a class="more-button" href="pages/products.html" aria-label="All Products">
+                        Lihat Semua Produk kami
+                        <span class="circle-chevron">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-container all-products-slider-container">
+                    <div class="swiper-wrapper product-slider-wrapper">
+                        <!-- Slide produk akan ditampilkan di sini oleh JavaScript -->
+                    </div>
+                </div>
+                <div class="pagination">
+                    <!-- Scrollbar -->
+                    <div class="swiper-scrollbar product-slider-scrollbar">
+                        <div class="swiper-scrollbar-drag product-slider-scrollbar-drag"></div>
+                    </div>
+                    <!-- Next & Prev Button -->
+                    <div class="prev-next-buttons buttons-on-mobile">
+                        <div class="circle-button product-slider-button-prev">
+                            <i class='bx bx-chevron-left'></i>
+                        </div>
+                        <div class="circle-button product-slider-button-next">
+                            <i class='bx bx-chevron-right'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="section-separator">
+        <hr class="separator">
+    </div>
+
+    <!-- FEATURE SECTION -->
+    <section class="feature">
+        <div class="feature-wrapper">
+            <div class="heading">
+                <h3>konsentrasi minyak parfum yang paling tinggi</h3>
+                <h1>Keanggunan Extrait de Parfume</h1>
+            </div>
+            <div class="images-box">
+                <div class="swiper-container images-3-row">
+                    <div class="swiper-wrapper images-row-wrapper">
+                        <div class="swiper-slide images-row-slide">
+                            <img src="assets/images/mobile-cta-1.jpg"
+                                alt="DELIN WOMAN Dengan sensasi aroma Rose yang manis" loading="lazy">
+                        </div>
+                        <div class="swiper-slide images-row-slide">
+                            <img src="assets/images/mobile-cta-2.jpg" alt="BACCA TOP tampil dengan percaya diri"
+                                loading="lazy">
+                        </div>
+                        <div class="swiper-slide images-row-slide">
+                            <img src="assets/images/mobile-cta-3.jpg" alt="MOY Woman dengan desain estetik"
+                                loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <p>
+                    WD Parfume terbuat dengan konsentrasi minyak sebesar 60% yang membuat aromanya semakin wangi dengan ketahanan aroma sepanjang hari. Setiap semprotan menciptakan sensasi mewah dan memikat yang menyelimuti Anda dengan pesona tak tertandingi. Dengan keharuman yang lebih kuat dibanding parfume biasa, WD Parfume memastikan bahwa Anda tetap harum, elegan, dan percaya diri sepanjang hari.
+                </p>
+                <p>
+                    Dengan kualitas Extrait de Parfume yang lebih kuat dibanding parfum biasa, WD Parfume memastikan Anda tetap harum dan percaya diri di setiap momen. Dirancang untuk memancarkan karakter yang eksklusif, wangi yang pekat ini memberi kesan istimewa yang bertahan lama, menjadikan Anda pusat perhatian sepanjang hari.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- END OF FEATURE SECTION -->
+
+    <!-- MEDIA WITH TEXT SLIDER -->
+    <section class="mwt-slider">
+        <div class="slider-container mwt-slider-container">
+            <!-- Image -->
+            <div class="mwt-slider-wrapper">
+                <div class="swiper-wrapper mwt-slider-image-wrapper">
+                    <div class="swiper-slide mwt-slider-image-slide">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-2.jpg" alt="Description 1" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-3.jpg" alt="Description 1" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-1.jpg" alt="Description 1" loading="lazy">
+                        </div>
+                    </div>
+                    <!-- <div class="regular-circle-button mwt-slider-button-next">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="regular-circle-button mwt-slider-button-prev">
+                        <i class='bx bx-chevron-left'></i>
+                    </div> -->
+                </div>
+            </div>
+            <!-- Teks Deskripsi -->
+            <div class="description-container">
+                <div class="description-wrapper">
+                    <div class="description active">
+                        <h5>Kandungan</h5>
+                        <h2>Bahan Berkualitas Tinggi</h2>
+                        <p>
+                            WD PARFUME dibuat dengan campuran bahan-bahan alami berkualitas tinggi yang dipilih khusus untuk menciptakan aroma yang elegan dan tahan lama.
+                        </p>
+                    </div>
+                    <div class="description">
+                        <h5>Wangi</h5>
+                        <h2>Aroma Mewah dan Memikat</h2>
+                        <p>
+                            dengan setiap semprotan menciptakan aura keanggunan, WD PARFUME memancarkan keharuman yang elegan dan memikat. Nikmati sensasi wangi yang tahan lama yang menyelimuti Anda dengan aura mewah dan penuh pesona.
+                        </p>
+                    </div>
+                    <div class="description">
+                        <h5>Kemasan</h5>
+                        <h2>Tampilan Elegan dan Mewah</h2>
+                        <p>
+                            WD PARFUME hadir dalam kemasan yang dirancang untuk mencerminkan keanggunan, Desainnya yang menawan dengan detail elegan memberikan kesan mewah dan eksklusif.
+                        </p>
+                    </div>
+                </div>
+                <!-- Next & Prev Button -->
+                <div class="prev-next-buttons">
+                    <div class="circle-button mwt-slider-button-prev">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                    <div class="circle-button mwt-slider-button-next">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF MEDIA WITH TEXT SLIDER -->
+
+    <!-- FEATURE SECTION -->
+    <section class="feature">
+        <div class="feature-wrapper">
+            <div class="heading">
+                <h3>Nikmati Keharuman Sepanjang Hari</h3>
+                <h1>Wangi Tahan Lama Hingga 12 Jam</h1>
+            </div>
+            <div class="images-box">
+                <div class="swiper-container images-2-row">
+                    <div class="swiper-wrapper images-row-wrapper">
+                        <div class="swiper-slide images-row-slide">
+                            <img loading="lazy" src="assets/images/mobile-cta-1.jpg"
+                                alt="DELIN WOMAN Dengan sensasi aroma Rose yang manis" loading="lazy">
+                        </div>
+                        <div class="swiper-slide images-row-slide">
+                            <img loading="lazy" src="assets/images/mobile-cta-2.jpg"
+                                alt="BACCA TOP tampil dengan percaya diri" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <p>
+                    Dengan WD Parfume, Anda tidak perlu lagi khawatir tentang wangi yang cepat memudar. Diformulasikan dengan teknologi parfum terbaru, aroma kami dirancang untuk tetap segar dan memikat hingga 12 jam penuh. Setiap semprotan tidak hanya memberikan kesan yang mewah, tetapi juga memastikan keharuman yang lembut namun kuat, menemani Anda dari pagi hingga malam tanpa perlu sering menyemprot ulang. Ini adalah parfum yang memberi Anda ketenangan, karena tahu bahwa keharuman Anda akan tetap bertahan, apa pun aktivitas yang Anda jalani.
+                </p>
+                <p>
+                    Baik saat Anda menjalani hari sibuk di kantor, menghadiri acara spesial, atau sekadar menikmati waktu bersama teman dan keluarga, WD Parfume hadir sebagai pelengkap sempurna untuk hari Anda. Wangi yang tahan lama ini tidak hanya menciptakan kesan elegan, tetapi juga meningkatkan rasa percaya diri Anda. Setiap aroma yang dipancarkan membawa aura yang unik dan memikat, memastikan bahwa Anda selalu meninggalkan kesan yang abadi di mana pun Anda berada. Dengan WD Parfume, wangi elegan dan tahan lama kini menjadi milik Anda.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- END OF FEATURE SECTION -->
+
+    <!-- GALLERY FULL WIDTH -->
+    <section class="full-width">
+        <div class="gallery-full-width-slider">
+            <div class="swiper-wrapper gallery-full-width-slider-wrapper">
+                <div class="swiper-slide gallery-full-width-slider-slide">
+                    <div class="gallery-full-width-image-wrapper">
+                        <img src="assets/images/mobile-cta-2.jpg" alt="Image 1">
+                    </div>
+                </div>
+                <div class="swiper-slide gallery-full-width-slider-slide">
+                    <div class="gallery-full-width-image-wrapper">
+                        <img src="assets/images/mobile-cta-1.jpg" alt="Image 2">
+                    </div>
+                </div>
+                <!-- Tambahkan slide lainnya -->
+            </div>
+
+            <div class="swiper-button-next regular-circle-button gallery-full-width-slider-button-next">
+                <i class='bx bx-chevron-right'></i>
+            </div>
+            <div class="swiper-button-prev regular-circle-button gallery-full-width-slider-button-prev">
+                <i class='bx bx-chevron-left'></i>
+            </div>
+        </div>
+    </section>
+    <!-- END OF GALLERY FULL WIDTH -->
+
+    <!-- MEDIA WITH TEXT SLIDER -->
+    <section class="mwt-slider-2">
+        <div class="heading-center">
+            <h2>Memiliki Banyak Varian Parfume</h2>
+            <p>
+                Di WD Parfume, kami percaya bahwa setiap orang memiliki kepribadian dan gaya unik yang harus disertai dengan aroma yang sesuai. Itulah mengapa kami menghadirkan berbagai varian parfum yang dirancang untuk memenuhi setiap selera dan kebutuhan. Mulai dari aroma yang segar dan ringan, hingga wangi yang lebih intens dan eksotis, koleksi kami menawarkan pilihan untuk setiap kesempatan, baik formal maupun santai. Anda bisa menemukan parfum yang cocok untuk segala suasana.
+            </p>
+        </div>
+        <div class="slider-container mwt-slider-container-2 mwt-media-left">
+            <!-- Image -->
+            <div class="mwt-slider-wrapper-2">
+                <div class="mwt-overlay">
+                    <h5 class="overlay-text-1">Varian Parfume</h5>
+                    <h1 class="overlay-text-2">UNISEX</h1>
+                </div>
+                <div class="swiper-wrapper mwt-slider-image-wrapper-2">
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-2.jpg" alt="WD Parfume My Ombre" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-3.jpg" alt="WD Parfume Lesables" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-1.jpg" alt="WD Parfume Bacca Top" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-1.jpg" alt="WD Parfume Kiss" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-1.jpg" alt="WD Parfume Honey" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-1.jpg" alt="WD Parfume Black Opium" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-1.jpg" alt="WD Parfume King Bal's" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Teks Deskripsi -->
+            <div class="description-container-2">
+                <div class="description-wrapper-2">
+                    <div class="description-2 active">
+                        <h2>My Ombre</h2>
+                        <p>
+                            Beraroma Eksotis Bernuansa kayu, rempah dan aroma yang mewah dan misterius
+                        </p>
+                    </div>
+                    <div class="description-2">
+                        <h2>Lesables</h2>
+                        <p>
+                            Beraroma kemewahan yang terpancar dipadukan dengan aroma mawar yang anggun serta OUD yang Eksotis memperkuat kesan kemewahan pada parfume ini.
+                        </p>
+                    </div>
+                    <div class="description-2">
+                        <h2>Bacca Top</h2>
+                        <p>
+                            Aroma Amber dan Almond kesan mewah sangat kental pada parfume ini diimbangi dengan aroma manis yang selaras serta nuansa yang hangat
+                        </p>
+                    </div>
+                    <div class="description-2">
+                        <h2>Kiss</h2>
+                        <p>
+                            Aroma Frutty dan sweety dan buah tropis yang segar dan manis dipadukan dengan aroma musk yang sensual dan Floral yang lembut dan elegant.
+                        </p>
+                    </div>
+                    <div class="description-2">
+                        <h2>Honey</h2>
+                        <p>
+                            Aroma Floral yang segar, elegan serta mewah terpancar dari parfume ini.
+                        </p>
+                    </div>
+                    <div class="description-2">
+                        <h2>Black Opium</h2>
+                        <p>
+                            Memancarkan kesan yang manis bak aroma Vanilla bunga Sweety, serta kehangatan yang berasal dari kombinasi aroma kopi dan rempah rempah yang disandingkan dengan aroma kayu cendana yang gurih.
+                        </p>
+                    </div>
+                    <div class="description-2">
+                        <h2>King Bal's</h2>
+                        <p>
+                            Memiliki aroma ceria dan kompleks wanginya nuansa segar bergamot dan lemon, diikuti kelembutan Neroli, terdapat sentuhan bunga Violet dan Marigold Afrika, yang memberiakan karakter kaya dan berwarna basisnya terdiri dari Cedarwood, Vetiver dan Musk. Memberikan kesan hangat dan bersahaja secara keseluruhan parfume ini menawarkan kombinasi antara kesegaran dan kehangatan menciptakan aroma memikat dan berkelas.
+                        </p>
+                    </div>
+                </div>
+                <!-- Next & Prev Button -->
+                <div class="prev-next-buttons-center">
+                    <div class="circle-button mwt-slider-button-prev-2">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                    <div class="circle-button mwt-slider-button-next-2">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-container mwt-slider-container-2 mwt-media-right">
+            <!-- Image -->
+            <div class="mwt-slider-wrapper-3">
+                <div class="mwt-overlay">
+                    <h5 class="overlay-text-1">Varian Parfume</h5>
+                    <h1 class="overlay-text-2">WOMAN</h1>
+                </div>
+                <div class="swiper-wrapper mwt-slider-image-wrapper-2">
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-2.jpg" alt="WD Parfume Delin" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-3.jpg" alt="WD Parfume MOI" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-1.jpg" alt="WD Parfume Rainbow Love" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-1.jpg" alt="WD Parfume Princess" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-1.jpg" alt="WD Parfume Queen of Rose" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Teks Deskripsi -->
+            <div class="description-container-2">
+                <div class="description-wrapper-2">
+                    <div class="description-3 active">
+                        <h2>Delin</h2>
+                        <p>
+                            Beraroma Rose, Frutty dan Vanilla yang kuat menciptakan kesan elegan dipadukan dengan aroma Frutty yang manis & segar aroma Powdery yang memberiakan kesan mewah juga klasik. 
+                        </p>
+                    </div>
+                    <div class="description-3">
+                        <h2>MOI</h2>
+                        <p>
+                            Beraroma Vanilla yang manis dengan sentuhan aroma bunga yang lembut serta memberiakan kesan yang hangat.
+                        </p>
+                    </div>
+                    <div class="description-3"> 
+                        <h2>Rainbow Love</h2>
+                        <p>
+                            Beraroma segar perpaduan manisnya bunga dan buah.
+                        </p>
+                    </div>
+                    <div class="description-3"> 
+                        <h2>Princess</h2>
+                        <p>
+                            Aroma Gourmand yang manis dan lezat berpadu dengan bunga mawar serta Peony yang lembut dan romantis di lengkapi dengan kesan yang hangat sehingga sangat nyaman digunakan.
+                        </p>
+                    </div>
+                    <div class="description-3"> 
+                        <h2>Queen of Rose</h2>
+                        <p>
+                            Beraroma ringan dan lembut yang berasal dari Floral, Bersenandung dengan aroma Fresh Manis Frutty & Nuansa bunga mawar yang sangat kuat tetapi Queen of Rose ini jelas memiliki nuansa yang lebih segar dan ringan.
+                        </p>
+                    </div>
+                </div>
+                <!-- Next & Prev Button -->
+                <div class="prev-next-buttons-center">
+                    <div class="circle-button mwt-slider-button-prev-3">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                    <div class="circle-button mwt-slider-button-next-3">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-container mwt-slider-container-2 mwt-media-left">
+            <!-- Image -->
+            <div class="mwt-slider-wrapper-4">
+                <div class="mwt-overlay">
+                    <h5 class="overlay-text-1">Varian Parfume</h5>
+                    <h1 class="overlay-text-2">MAN</h1>
+                </div>
+                <div class="swiper-wrapper mwt-slider-image-wrapper-2">
+                    <div class="swiper-slide mwt-slider-image-slide-2">
+                        <div class="image-wrapper-square">
+                            <img src="assets/images/mobile-cta-2.jpg" alt="Description 1" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Teks Deskripsi -->
+            <div class="description-container-2">
+                <div class="description-wrapper-2">
+                    <div class="description-4 active">
+                        <h2>TREESAME</h2>
+                        <p>
+                            Aroma segar dan tajam dari Citrus dan dipadukan dengan aroma woody yang bernuansa kayu yang hangat dan maskulin dilengkapi dengan aroma Earhty memberikan kesan yang alami.
+                        </p>
+                    </div>
+                </div>
+                <!-- Next & Prev Button -->
+                <div class="prev-next-buttons-center">
+                    <div class="circle-button mwt-slider-button-prev-4">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                    <div class="circle-button mwt-slider-button-next-4">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF MEDIA WITH TEXT SLIDER -->
+
+    <!-- MEDIA WITH TEXT -->
+    <!-- <section class="media-with-text">
+        <div class="heading-center">
+            <h2>Memiliki Banyak Varian Parfume</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, illo. Vel deserunt consequatur minima
+                sapiente a autem nihil aut aliquam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                unde modi fugit eligendi sit rerum fugiat. Assumenda doloribus aliquam sapiente.</p>
+        </div>
+        <div class="media-with-text-wrapper media-left">
+            <div class="mwt-media-content">
+                <img src="assets/images/mobile-cta-1.jpg" alt="DELIN WOMAN Dengan sensasi aroma Rose yang manis"
+                    loading="lazy">
+            </div>
+            <div class="mwt-text-content">
+                <div class="mwt-text-content-center">
+                    <h2>UNISEX</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, laborum. Quidem eius
+                        magnam provident quas sapiente explicabo numquam blanditiis ducimus magni quia? Atque dolorum
+                        eveniet, nemo error, repellat eos molestias magnam, incidunt reprehenderit repellendus
+                        repudiandae aspernatur doloremque non suscipit tenetur eligendi saepe. Omnis cum placeat dolore
+                        expedita commodi obcaecati ipsa.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="media-with-text-wrapper media-right">
+            <div class="mwt-media-content">
+                <img src="assets/images/mobile-cta-1.jpg" alt="DELIN WOMAN Dengan sensasi aroma Rose yang manis"
+                    loading="lazy">
+            </div>
+            <div class="mwt-text-content">
+                <div class="mwt-text-content-center">
+                    <h2>WOMAN</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, laborum. Quidem eius
+                        magnam provident quas sapiente explicabo numquam blanditiis ducimus magni quia? Atque dolorum
+                        eveniet, nemo error, repellat eos molestias magnam, incidunt reprehenderit repellendus
+                        repudiandae aspernatur doloremque non suscipit tenetur eligendi saepe. Omnis cum placeat dolore
+                        expedita commodi obcaecati ipsa.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="media-with-text-wrapper media-left">
+            <div class="mwt-media-content">
+                <img src="assets/images/mobile-cta-1.jpg" alt="DELIN WOMAN Dengan sensasi aroma Rose yang manis"
+                    loading="lazy">
+            </div>
+            <div class="mwt-text-content">
+                <div class="mwt-text-content-center">
+                    <h2>MAN</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, laborum. Quidem eius
+                        magnam provident quas sapiente explicabo numquam blanditiis ducimus magni quia? Atque dolorum
+                        eveniet, nemo error, repellat eos molestias magnam, incidunt reprehenderit repellendus
+                        repudiandae aspernatur doloremque non suscipit tenetur eligendi saepe. Omnis cum placeat dolore
+                        expedita commodi obcaecati ipsa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- END OF MEDIA WITH TEXT -->
+
+    <div class="section-separator">
+        <hr class="separator">
+    </div>
+
+    <!-- PRODUCTS SLIDER -->
+    <section class="products-slider">
+        <div class="swiper-with-pagination">
+            <div class="products-heading">
+                <div class="heading">
+                    <h3>Parfumes</h3>
+                    <h2>Produk Unggulan</h2>
+                </div>
+                <a class="more-button" href="pages/products.html" aria-label="All Products">
+                    All Products
+                    <span class="circle-chevron">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </span>
+                </a>
+            </div>
+            <div class="swiper-container popular-slider-container">
+                <div class="swiper-wrapper product-slider-wrapper">
+                    <!-- Slide produk akan ditampilkan di sini oleh JavaScript -->
+                </div>
+            </div>
+            <div class="pagination">
+                <!-- Scrollbar -->
+                <div class="swiper-scrollbar product-slider-scrollbar">
+                    <div class="swiper-scrollbar-drag product-slider-scrollbar-drag"></div>
+                </div>
+                <!-- Next & Prev Button -->
+                <div class="prev-next-buttons buttons-on-mobile">
+                    <div class="circle-button product-slider-button-prev">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                    <div class="circle-button product-slider-button-next">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF PRODUCTS SLIDER -->
+
+    <!-- CALL TO ACTION -->
+    <section class="call-to-action">
+        <div class="call-to-action-wrapper">
+            <h2>hubungi Kami</h2>
+            <div class="center-image">
+                <img src="assets/images/logo.jpg" alt="WD Parfume Photo Profile" loading="lazy">
+            </div>
+            <p>
+                🌟 Ingin Tampil Elegan dan Mewah? Dengan aroma yang memikat, WD PARFUME memberikan pengalaman tak terlupakan di setiap semprotan. Keharuman elegan dan memikat ini menciptakan jejak keindahan yang romantis dan eksklusif. 😍
+            </p>
+            <p>
+                ✨ Jadi yang paling wangi dan memikat sepanjang hari? Kenapa nggak, WD PARFUME tahan hingga 12 jam dijamin deh kamu bakal wangi seharian
+            </p>
+            <p>
+                😍 Keharuman WD Parfume yang Mewah dan Menggoda Wanginya bikin vibes jadi elegan dan mewah seketika ✨
+            </p>
+            <p>👋 Yuk Check out sekarang!!</p>
+            <div class="center-button">
+                <a href="pages/contact.html" class="main-button" aria-label="Contact">
+                    Contact<i class='bx bx-phone'></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- CALL TO ACTION -->
+
+    <!-- UPDATE NEWS -->
+    <section class="update-news" id="update">
+        <div class="up-center-text">
+            <h2>New Updates</h2>
+        </div>
+        <div class="update-card-instagram">
+            <div class="card-instagram">
+                <div class="instagram-embed">
+                    <blockquote class="instagram-media" data-instgrm-captioned
+                        data-instgrm-permalink="https://www.instagram.com/p/C-wkKs3x0G4/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-version="14"
+                        style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <div style="padding:16px;"> <a
+                                href="https://www.instagram.com/p/C-wkKs3x0G4/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                target="_blank">
+                                <div style=" display: flex; flex-direction: row; align-items: center;">
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding: 19% 0;"></div>
+                                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                        width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                        xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                <g>
+                                                    <path
+                                                        d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></div>
+                                <div style="padding-top: 8px;">
+                                    <div
+                                        style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                        Lihat postingan ini di Instagram</div>
+                                </div>
+                                <div style="padding: 12.5% 0;"></div>
+                                <div
+                                    style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                    <div>
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                        </div>
+                                        <div
+                                            style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                        </div>
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: 8px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                        </div>
+                                        <div
+                                            style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: auto;">
+                                        <div
+                                            style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                        </div>
+                                        <div
+                                            style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                    </div>
+                                </div>
+                            </a>
+                            <p
+                                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                <a href="https://www.instagram.com/p/C-wkKs3x0G4/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                    target="_blank">Sebuah kiriman dibagikan oleh OWNER WD PARFUME &amp; WD GLASSKIN
+                                    (@wd.official.id)</a>
+                            </p>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card-instagram">
+                <div class="instagram-embed">
+                    <blockquote class="instagram-media" data-instgrm-captioned
+                        data-instgrm-permalink="https://www.instagram.com/p/C-rv8vVRxqs/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-version="14"
+                        style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <div style="padding:16px;"> <a
+                                href="https://www.instagram.com/p/C-rv8vVRxqs/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                target="_blank">
+                                <div style=" display: flex; flex-direction: row; align-items: center;">
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding: 19% 0;"></div>
+                                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                        width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                        xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                <g>
+                                                    <path
+                                                        d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></div>
+                                <div style="padding-top: 8px;">
+                                    <div
+                                        style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                        Lihat postingan ini di Instagram</div>
+                                </div>
+                                <div style="padding: 12.5% 0;"></div>
+                                <div
+                                    style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                    <div>
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                        </div>
+                                        <div
+                                            style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                        </div>
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: 8px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                        </div>
+                                        <div
+                                            style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: auto;">
+                                        <div
+                                            style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                        </div>
+                                        <div
+                                            style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                    </div>
+                                </div>
+                            </a>
+                            <p
+                                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                <a href="https://www.instagram.com/p/C-rv8vVRxqs/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                    target="_blank">Sebuah kiriman dibagikan oleh OWNER WD PARFUME &amp; WD GLASSKIN
+                                    (@wd.official.id)</a>
+                            </p>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card-instagram">
+                <div class="instagram-embed">
+                    <blockquote class="instagram-media" data-instgrm-captioned
+                        data-instgrm-permalink="https://www.instagram.com/p/C-Em638SMC3/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-version="14"
+                        style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <div style="padding:16px;"> <a
+                                href="https://www.instagram.com/p/C-Em638SMC3/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                target="_blank">
+                                <div style=" display: flex; flex-direction: row; align-items: center;">
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding: 19% 0;"></div>
+                                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
+                                        width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                        xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                <g>
+                                                    <path
+                                                        d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></div>
+                                <div style="padding-top: 8px;">
+                                    <div
+                                        style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                        Lihat postingan ini di Instagram</div>
+                                </div>
+                                <div style="padding: 12.5% 0;"></div>
+                                <div
+                                    style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                    <div>
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                        </div>
+                                        <div
+                                            style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                        </div>
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: 8px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                        </div>
+                                        <div
+                                            style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: auto;">
+                                        <div
+                                            style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                        </div>
+                                        <div
+                                            style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                    </div>
+                                </div>
+                            </a>
+                            <p
+                                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                <a href="https://www.instagram.com/p/C-Em638SMC3/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                    target="_blank">Sebuah kiriman dibagikan oleh OWNER WD PARFUME &amp; WD GLASSKIN
+                                    (@wd.official.id)</a>
+                            </p>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF UPDATE NEWS -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-info-wrapper">
+            <div class="first-info">
+                <div class="logo-wrapper-footer">
+                    <a href="index.html" class="logo-footer">
+                        <img src="assets/images/wd-logo.png" alt="WD Parfume Logo">
+                    </a>
+                </div>
+                <ul class="navmenu-footer">
+                    <li>
+                        <a href="index.html" class="footer-link" aria-label="Home" id="nav-home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/products.html" class="footer-link" aria-label="Products"
+                            id="nav-product">
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/about.html" class="footer-link" aria-label="About us" id="nav-contact">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/faq.html" class="footer-link" aria-label="Update" id="nav-update">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer-text">
+                    <p>
+                        Terima kasih telah berkunjung ke website wd parfume! Jangan ragu untuk menghubungi kami atau ikuti media sosial untuk mendapatkan informasi terbaru! Ditunggu ordernya ya!
+                    </p>
+                </div>
+                <div class="social-icon">
+                    <ul class="nav-menu-social-media">
+                        <li>
+                            <a href="https://www.facebook.com/widya.va.9" target="_blank" rel="noopener" aria-label="Follow on Facebook">
+                                <i class='bx bxl-facebook-circle'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/wd.official.id" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@wdparfume1" target="_blank" rel="noopener" aria-label="Follow on TikTok">
+                                <i class='bx bxl-tiktok'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://shopee.co.id/widyaraesa" target="_blank" rel="noopener" aria-label="Follow on Shopee">
+                                <i class='bx bx-shopping-bag'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-info">
+                <div class="footer-navigation-wrapper">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <a href="pages/contact.html" class="footer-link" aria-label="Contact">
+                                Contact<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/62?text=Halo,%20Kak." target="_blank" class="footer-link" rel="noopener" aria-label="WhatsApp">
+                                WhatsApp<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-navigation-wrapper">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li>
+                            <a href="https://shopee.co.id/widyaraesa" target="_blank" class="footer-link" rel="noopener" aria-label="Shopee">
+                                Shopee<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@wdparfume1" target="_blank" class="footer-link" rel="noopener" aria-label="Tiktok Shop">
+                                TikTok Shop<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-navigation-wrapper">
+                    <h4>Media Sosial</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/widya.va.9" target="_blank" class="footer-link" rel="noopener" aria-label="Facebook">
+                                Facebook<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/wd.official.id" target="_blank" class="footer-link" rel="noopener" aria-label="Instagram">
+                                Instagram<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@wdparfume1" target="_blank" class="footer-link" rel="noopener" aria-label="TikTok">
+                                TikTok<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot-copy">
+            <p>&copy; 2024 WD Parfume.</p>
+        </div>
+    </footer>
+    <!-- END OF FOOTER -->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/slider.js"></script>
+
+    <!-- EMBED INSTAGRAM -->
+    <script async src="//www.instagram.com/embed.js"></script>
+
+    <!-- GSAP (ANIMATION) -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- LENIS (SMOOTH ON SCROLL) -->
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

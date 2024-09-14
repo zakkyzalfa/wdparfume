@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Temukan produk perawatan kulit terbaik di toko kecantikan online kami. Produk berkualitas dan harga terjangkau.">
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/hero.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/productdisplay.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+
+    <!-- TITLE WEBSITE -->
+    <link rel="icon" href="../assets/images/logo.jpg" />
+    <title>WD Parfume | Parfum Eksotis</title>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Lotion Alami",
+          "description": "Lotion alami yang melembapkan kulit."
+        }
+    </script>
+
+    <!-- FONT GOOGLEAPIS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"> <!-- Jost -->
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet"> <!-- EB Garamond -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet"> <!-- Rubik -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Noto Sans JP -->
+
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="header-transparent dark-theme page-with-hero-section">
+
+    <!-- HEADER NAVIGASTION BAR -->
+    <header class="navigation-bar">
+        <div class="logo-wrapper">
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/wd-logo.png" alt="WD Parfume Logo">
+            </a>
+        </div>
+        <div class="main-navigation">
+            <nav class="main-navigation-wrapper">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="../index.html" aria-label="Home" id="nav-home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html" aria-label="Products" id="nav-product">
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" aria-label="About us" id="nav-contact">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html" aria-label="Update" id="nav-update">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="panel-footer">
+                <ul class="nav-menu-social-media">
+                    <li>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on Facebook">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on TikTok">
+                            <i class='bx bxl-tiktok'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on Shopee">
+                            <i class='bx bx-shopping-bag'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-icon"> <!--right navbar-->
+
+            <a href="contact.html" aria-label="Contact">
+                <i class='bx bx-phone active'></i>
+            </a>
+
+            <div class="search-icon">
+                <i class="bx bx-search" id="search-button"></i>
+            </div>
+
+            <div class="menu-icon">
+                <i class="bx bx-menu-alt-right" id="menu-icon"></i>
+            </div>
+        </div>
+    </header>
+    <!-- SEARCH BOX -->
+    <div id="overlay"></div>
+    <div class="search-box" id="search-content">
+        <div class="wrapper-search-box">
+            <form class="search-form">
+                <input type="text" placeholder="Cari nama produk...">
+                <i class="bx bx-x close" id="search-close"></i>
+            </form>
+            <div class="search-box2" data-lenis-prevent>
+                <!-- displaySearchReasult akan ditampilkan disini oleh javascript -->
+            </div>
+        </div>
+    </div>
+    <!-- END OF HEADER NAVIGASTION BAR -->
+
+    <!-- CONTACT -->
+    <section class="main-contact"> <!-- background image ditampilkan pada class .main-home -->
+        <div class="contact-description">
+            <div class="profile-picture">
+                <div class="profile-picture-wrapper">
+                    <img src="../assets/images/logo.jpg" alt=" ">
+                </div>
+            </div>
+            <div class="contact-description-text">
+                <h1>
+                    WD PARFUME
+                    <!-- <span>WD</span>
+                    <span>PARFUME</span> -->
+                </h1>
+                <div class="sub-text">
+                    <h5>Extrait De Parfume</h5>
+                    <p>WD Parfume adalah Parfume yang terinspirasi dari Parfume internasional dengan wangi yang exclusive dan tahan lama.</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-multiple-btn">
+            <ul class="buttons">
+                <li>
+                    <a href="#" class="multiple-btn btn-whatsapp">
+                        WhatsApp
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="multiple-btn btn-instagram">
+                        Instagram
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="multiple-btn btn-tiktok">
+                        Tiktok
+                        <i class='bx bxl-tiktok' ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="multiple-btn btn-shopee">
+                        Shopee 
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                            <path id="Ð¡Ð»Ð¾Ð¹_1" d="M25.6,6.5c-0.3-0.3-0.7-0.5-1.1-0.5h-4.5c-0.5-2.3-2.5-4-4.9-4s-4.4,1.7-4.9,4H5.6c-0.4,0-0.8,0.2-1.1,0.5 C4.1,6.8,4,7.3,4,7.7l0.7,15.2C4.8,24.7,6.2,26,7.9,26h14.1c1.7,0,3.2-1.4,3.2-3.1L26,7.7C26,7.3,25.9,6.8,25.6,6.5z M15,4 c1.3,0,2.4,0.8,2.8,2h-5.6C12.6,4.9,13.7,4,15,4z M15,22c-2.5,0-4.2-1.8-4.2-1.8l1.1-1.8c0,0,2,1.5,3.2,1.5 c1.1,0,2.1-0.6,2.1-1.4c0-0.9-0.6-1.3-2.4-1.9c-1.5-0.6-3.5-1.3-3.5-3.4c0-1.9,1.7-3.3,3.9-3.3c2.5,0,3.8,1.4,3.8,1.4l-1,1.7 c0,0-1.5-1.1-2.8-1.1c-1.1,0-1.9,0.5-1.9,1.3c0,0.6,0.6,1,2.1,1.5c1.6,0.6,3.8,1.4,3.8,3.8C19.1,20.5,17.3,22,15,22z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="multiple-btn btn-shopnow">
+                        Shop Now <i class='bx bx-right-arrow-alt' ></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- END OF CONTACT -->
+
+    <!-- JAVASCRIPT -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/products.js"></script>
+    <script src="../assets/js/slider.js"></script>
+
+    <!-- EMBED INSTAGRAM -->
+    <script async src="//www.instagram.com/embed.js"></script>
+
+    <!-- GSAP (ANIMATION) -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- LENIS (SMOOTH ON SCROLL) -->
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+
+</body>
+
+</html>

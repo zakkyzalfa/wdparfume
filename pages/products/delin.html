@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/hero.css">
+    <link rel="stylesheet" href="../../assets/css/header.css">
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+    <link rel="stylesheet" href="../../assets/css/productdisplay.css">
+    <link rel="stylesheet" href="../../assets/css/product.css">
+
+    <!-- TITLE WEBSITE -->
+    <link rel="icon" type="image/jpg" href="../../assets/images/logo.jpg" />
+    <title>WD PARFUME</title>
+
+    <!-- FONT GOOGLEAPIS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet"> <!-- Noto Sans JP -->
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet"> <!-- EB Garamond -->
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="header-height">
+
+    <!-- HEADER NAVIGASTION BAR -->
+    <header class="navigation-bar">
+        <div class="logo-wrapper">
+            <a href="../../index.html" class="logo">
+                <img src="../../assets/images/wd-logo.png" alt="WD Parfume Logo">
+            </a>
+        </div>
+        <div class="main-navigation">
+            <nav class="main-navigation-wrapper">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="../../index.html" aria-label="Home" id="nav-home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../pages/products.html" aria-label="Products" id="nav-product">
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../pages/about.html" aria-label="About us" id="nav-contact">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../pages/faq.html" aria-label="Update" id="nav-update">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="panel-footer">
+                <ul class="nav-menu-social-media">
+                    <li>
+                        <a href="https://www.facebook.com/widya.va.9" target="_blank" rel="noopener" aria-label="Follow on Facebook">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/wd.official.id" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@wdparfume1" target="_blank" rel="noopener" aria-label="Follow on TikTok">
+                            <i class='bx bxl-tiktok'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://shopee.co.id/widyaraesa" target="_blank" rel="noopener" aria-label="Follow on Shopee">
+                            <i class='bx bx-shopping-bag'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-icon"> <!--right navbar-->
+
+            <a href="../../pages/contact.html" aria-label="Contact">
+                <i class='bx bx-phone'></i>
+            </a>
+
+            <div class="search-icon">
+                <i class="bx bx-search" id="search-button"></i>
+            </div>
+
+            <div class="menu-icon">
+                <i class="bx bx-menu-alt-right" id="menu-icon"></i>
+            </div>
+        </div>
+    </header>
+    <!-- SEARCH BOX -->
+    <div id="overlay"></div>
+    <div class="search-box" id="search-content">
+        <div class="wrapper-search-box">
+            <form class="search-form">
+                <input type="text" placeholder="Cari nama produk...">
+                <i class="bx bx-x close" id="search-close"></i>
+            </form>
+            <div class="search-box2" data-lenis-prevent>
+                <!-- displaySearchReasult akan ditampilkan disini oleh javascript -->
+            </div>
+        </div>
+    </div>
+    <!-- END OF HEADER NAVIGASTION BAR -->
+
+    <!-- PRODUCT DETAIL -->
+    <section class="product-details">
+        <!-- Main Image Gallery -->
+        <div class="image-product-details">
+            <div class="swiper-container main-swiper-container">
+                <div class="swiper-wrapper main-swiper-wrapper">
+                    <div class="swiper-slide main-swiper-slide">
+                        <div class="image-wrapper-square">
+                            <img src="../../assets/images/produk01.JPEG" alt="Delin">
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-swiper-slide">
+                        <div class="image-wrapper-square">
+                            <img src="../../assets/images/banner-3.JPEG" alt="Delin">
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-swiper-slide">
+                        <div class="image-wrapper-square">
+                            <img src="../../assets/images/produk01.JPEG" alt="Delin">
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-swiper-slide">
+                        <div class="image-wrapper-square">
+                            <img src="../../assets/images/produk01.JPEG" alt="Delin">
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-swiper-slide">
+                        <div class="image-wrapper-square">
+                            <img src="../../assets/images/produk01.JPEG" alt="Delin">
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-swiper-slide">
+                        <div class="image-wrapper-square">
+                            <img src="../../assets/images/produk01.JPEG" alt="Delin">
+                        </div>
+                    </div>
+                    <!-- Tambahkan slide lainnya di sini -->
+                </div>
+                <!-- Navigation buttons -->
+                <div class="gallery-thumb-slider-buttons">
+                    <div class="swiper-button-next regular-circle-button gallery-thumb-slider-button-next">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="swiper-button-prev regular-circle-button gallery-thumb-slider-button-prev">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Thumbnail Gallery -->
+            <div class="swiper-container thumb-swiper-container">
+                <div class="swiper-wrapper thumb-swiper-wrapper">
+                    <div class="swiper-slide thumb-swiper-slide">
+                        <img src="../../assets/images/produk01.JPEG" alt="Thumb 1">
+                    </div>
+                    <div class="swiper-slide thumb-swiper-slide">
+                        <img src="../../assets/images/banner-3.JPEG" alt="Thumb 2">
+                    </div>
+                    <div class="swiper-slide thumb-swiper-slide">
+                        <img src="../../assets/images/produk01.JPEG" alt="Thumb 3">
+                    </div>
+                    <div class="swiper-slide thumb-swiper-slide">
+                        <img src="../../assets/images/produk01.JPEG" alt="Thumb 3">
+                    </div>
+                    <div class="swiper-slide thumb-swiper-slide">
+                        <img src="../../assets/images/produk01.JPEG" alt="Thumb 3">
+                    </div>
+                    <div class="swiper-slide thumb-swiper-slide">
+                        <img src="../../assets/images/produk01.JPEG" alt="Thumb 3">
+                    </div>
+                    <!-- Tambahkan thumbnail lainnya di sini -->
+                </div>
+            </div>
+            <div class="pagination">
+                <!-- Scrollbar -->
+                <div class="swiper-scrollbar gallery-thumb-slider-scrollbar">
+                    <div class="swiper-scrollbar-drag gallery-thumb-slider-scrollbar-drag"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT INFO -->
+        <div class="product-info">
+            <div class="heading">
+                <h4>WOMAN</h4>
+                <h1>Delin</h1>
+            </div>
+            <div class="product-info-block-item">
+                <div class="accordion">
+                    <div class="accordion-wrapper-harga">
+                        <div class="accordion-item-harga">
+                            <div class="accordion-header-harga">
+                                <h3 class="accordion-header-text-harga">Rp. 185.000,-</h3>
+                                <span class="no-shape">
+                                    <i class='bx bx-chevron-down'></i>
+                                </span>
+                            </div>
+                            <div class="accordion-content-harga">
+                                <p>
+                                    ini adalah harga original dari produk ini. kamu bisa menggunakan Voucher Discount, Voucher Gratis Ongkir, Voucher Cashback, dan Koin Shopee, yang kamu miliki di Shopee ataupun platform lain seperti TikTok Shop, untuk mendapatkan potongan harga dari harga original kami. 🤩🥰
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info-separator">
+                <hr class="separator">
+            </div>
+
+            <div class="product-info-block-item">
+                <h5>Deskripsi Product</h5>
+                <p>
+                    Beraroma Rose, Frutty dan Vanilla yang kuat menciptakan kesan elegan dipadukan dengan aroma Frutty yang manis & segar aroma Powdery yang memberiakan kesan mewah juga klasik.
+                </p>
+            </div>
+
+            <div class="product-info-separator">
+                <hr class="separator">
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="product-info-block-item buttons-buy-wrapper">
+                <a href="https://shopee.co.id/WD-PARFUM-Parfum-Wanita-Parfum-Wangi-Tahan-Lama(Extrait-De-Parfum)-i.130780324.23432191088?xptdk=a1782ae7-39a0-4a3d-85cc-8f9a0e3c5f09" class="button-buy btn-animate shopee" target="_blank" rel="noopener" aria-label="Beli di Shopee">
+                    Beli di Shopee<i class='bx bx-shopping-bag'></i>
+                </a>
+                <a href="https://www.tiktok.com/@wdparfume1" class="button-buy btn-animate tiktok" target="_blank" rel="noopener" aria-label="Beli TikTok Shop">
+                    Beli di TikTok Shop<i class='bx bxl-tiktok'></i>
+                </a>
+                <a href="https://wa.me/62?text=Halo,%20Kak." class="button-buy btn-animate whatsapp" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+                    Chat WhatsApp<i class='bx bxl-whatsapp'></i>
+                </a>
+            </div>
+
+            <div class="product-info-separator">
+                <hr class="separator">
+            </div>
+
+            <!-- ACCORDION -->
+            <div class="product-info-block-item">
+                <div class="accordion">
+                    <div class="accordion-wrapper">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <span class="accordion-header-text">Beli di Shopee</span>
+                                <span class="circle-chevron">
+                                    <i class='bx bx-chevron-down'></i>
+                                </span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Dengan menekan tombol "Beli di Shopee" kamu akan langsung di arahkan ke link shopee untuk membeli product tersebut. setelah kamu berada di halaman product shopee, kamu bisa melakukan pembelian seperti biasanya di shopee dengan cara klik tombol beli di shopee dan jangan lupa untuk memilih jenis parfume apa yang kamu mau, kamu juga bisa menambahkan jumlah product yang kamu ingin beli.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <span class="accordion-header-text">Beli di TikTok Shop</span>
+                                <span class="circle-chevron">
+                                    <i class='bx bx-chevron-down'></i>
+                                </span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Dengan menekan tombol "Beli di TikTok Shop" dan kamu akan diarahkan ke halaman produk kami di platform tersebut. Sama seperti di Shopee, pilih jenis parfum yang Anda inginkan, tambahkan jumlah produk, dan lakukan pembelian dengan mudah.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <span class="accordion-header-text">Chat Langsung ke WhatsApp</span>
+                                <span class="circle-chevron">
+                                    <i class='bx bx-chevron-down'></i>
+                                </span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Kamu juga bisa membelinya, melalui chat langsung ke WhatsApp, tombol "Chat WhatsApp"
+                                    kamu akan langsung di arahkan ke kontak WhatsApp WD Parfume untuk membeli product
+                                    tersebut. Kamu bisa langsung menanyakan detail produk dan melakukan pembelian secara langsung.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <span class="accordion-header-text">Pengiriman</span>
+                                <span class="circle-chevron">
+                                    <i class='bx bx-chevron-down'></i>
+                                </span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Kami memproses dan mengirimkan pesanan Anda secepat mungkin. 👍🚚</p>
+                                <ul class="accordion-content-list">
+                                    <li>
+                                        Agar paket Aman sampai ketangan customer, Lebih baik menambahkan extra bubble
+                                        wrap untuk pengiriman di luar kota Pekanbaru atau pembelian 1 pcs atau lebih
+                                        dari 1 pcs. Jika barang pecah tanpa menggunakan bubble wrap bukan tanggung jawab
+                                        kami.
+                                    </li>
+                                    <li>
+                                        Kamu bisa menambahkan bubble wrap pada produk shoppe kami, atau kamu bisa meminta untuk menambahkan bubble wrap di chat shoppe maupun WhatsApp
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF PRODUCT DETAIL -->
+
+    <div class="section-separator">
+        <hr class="separator">
+    </div>
+
+    <!-- PRODUCT SPECIFICATION -->
+    <section class="product-specification">
+        <div class="dual-column">
+            <div class="feature-wrapper">
+                <div class="heading">
+                    <h3>Delin Parfume</h3>
+                    <h1>Kelembutan Mawar dengan Sentuhan Manis dan Mewah</h1>
+                </div>
+                <div class="text">
+                    <p>
+                        Delin Woman adalah perpaduan sempurna antara keharuman mawar yang elegan, aroma frutty yang segar, dan kehangatan vanila yang manis. Parfum ini menawarkan kesan yang memikat dan feminin, ideal bagi mereka yang menginginkan sentuhan wangi yang klasik namun tetap modern. Keharuman ini menonjolkan keanggunan sekaligus kelembutan yang memperkuat karakter wangi wanita yang penuh percaya diri.
+                    </p>
+                    <p>
+                        Sentuhan aroma powdery di akhir memberikan nuansa mewah dan klasik yang memukau. Kombinasi ini menciptakan keseimbangan sempurna antara manis, segar, dan elegan, membuat Delin Woman menjadi pilihan yang tepat untuk segala suasana. Setiap semprotan parfum ini mengangkat aura kemewahan dan pesona yang tak tertandingi.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SPECIFICATION TABLE -->
+            <div class="specification-container">
+                <div class="specification-container-content">
+                    <h3>Specification Product</h3>
+                    <dl>
+                        <div class="spec-row">
+                            <dt>Kandungan Parfume</dt>
+                            <dd>Extrait de parfum</dd>
+                        </div>
+                        <div class="spec-row">
+                            <dt>Netto</dt>
+                            <dd>25ml</dd>
+                        </div>
+                        <div class="spec-row">
+                            <dt>Berat Produk</dt>
+                            <dd>80g</dd>
+                        </div>
+                        <div class="spec-row">
+                            <dt>Formulasi</dt>
+                            <dd>Spray</dd>
+                        </div>
+                        <div class="spec-row">
+                            <dt>Gender</dt>
+                            <dd>Woman</dd>
+                        </div>
+                        <div class="spec-row">
+                            <dt>Ukuran Produk</dt>
+                            <dd>Travel Size</dd>
+                        </div>
+                        <div class="spec-row">
+                            <dt>Umur Simpan</dt>
+                            <dd>3 Tahun</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF PRODUCT SPECIFICATION -->
+
+    <!-- MEDIA WITH TEXT SLIDER -->
+    <section class="mwt-slider">
+        <div class="slider-container mwt-slider-container">
+            <!-- Image -->
+            <div class="mwt-slider-wrapper">
+                <div class="swiper-wrapper mwt-slider-image-wrapper">
+                    <div class="swiper-slide mwt-slider-image-slide">
+                        <div class="image-wrapper-square">
+                            <img src="../../assets/images/mobile-cta-2.jpg" alt="Delin" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide">
+                        <div class="image-wrapper-square">
+                            <img src="../../assets/images/mobile-cta-3.jpg" alt="Delin" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-slide mwt-slider-image-slide">
+                        <div class="image-wrapper-square">
+                            <img src="../../assets/images/mobile-cta-1.jpg" alt="Delin" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Teks Deskripsi -->
+            <div class="description-container">
+                <div class="description-wrapper">
+                    <div class="description active">
+                        <h2>Menciptakan Aura Feminin dan Berkelas</h2>
+                        <p>
+                            Delin Woman memberikan keharuman yang memancarkan aura feminin, klasik, dan berkelas, menjadikannya pilihan tepat untuk berbagai kesempatan.
+                        </p>
+                    </div>
+                    <div class="description">
+                        <h2>Aroma Mawar yang Elegan</h2>
+                        <p>
+                            Keharuman mawar yang kuat dan anggun menciptakan kesan feminin yang menawan, memberikan parfum ini karakter yang memikat.
+                        </p>
+                    </div>
+                    <div class="description">
+                        <h2>Aroma Powdery yang Mewah</h2>
+                        <p>
+                            Sentuhan powdery yang lembut menambahkan nuansa klasik dan mewah pada parfum ini, menciptakan aura yang memikat dan abadi.
+                        </p>
+                    </div>
+                </div>
+                <!-- Next & Prev Button -->
+                <div class="prev-next-buttons">
+                    <div class="circle-button mwt-slider-button-prev">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                    <div class="circle-button mwt-slider-button-next">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF MEDIA WITH TEXT SLIDER -->
+
+    <!-- PRODUCTS SLIDER -->
+    <section class="products-slider">
+        <div class="swiper-with-pagination">
+            <div class="products-heading">
+                <div class="heading">
+                    <h3>Parfume</h3>
+                    <h2>Mungkin anda suka</h2>
+                </div>
+                <a class="more-button" href="../../pages/products.html" aria-label="All Products">
+                    All Products
+                    <span class="circle-chevron">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </span>
+                </a>
+            </div>
+            <div class="swiper-container recommended-slider-container">
+                <div class="swiper-wrapper product-slider-wrapper">
+                    <!-- Slide produk akan ditampilkan di sini oleh JavaScript -->
+                </div>
+            </div>
+            <div class="pagination">
+                <!-- Scrollbar -->
+                <div class="swiper-scrollbar product-slider-scrollbar">
+                    <div class="swiper-scrollbar-drag product-slider-scrollbar-drag"></div>
+                </div>
+                <!-- Next & Prev Button -->
+                <div class="prev-next-buttons buttons-on-mobile">
+                    <div class="swiper-button-prev circle-button product-slider-button-prev">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                    <div class="swiper-button-next circle-button product-slider-button-next">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF PRODUCTS SLIDER -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-info-wrapper">
+            <div class="first-info">
+                <div class="logo-wrapper-footer">
+                    <a href="../../index.html" class="logo-footer">
+                        <img src="../../assets/images/wd-logo.png" alt="WD Parfume Logo">
+                    </a>
+                </div>
+                <ul class="navmenu-footer">
+                    <li>
+                        <a href="../../index.html" class="footer-link" aria-label="Home" id="nav-home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../pages/products.html" class="footer-link" aria-label="Products"
+                            id="nav-product">
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../pages/about.html" class="footer-link" aria-label="About us" id="nav-contact">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../pages/faq.html" class="footer-link" aria-label="Update" id="nav-update">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer-text">
+                    <p>
+                        Terima kasih telah berkunjung ke website wd parfume! Jangan ragu untuk menghubungi kami atau ikuti media sosial untuk mendapatkan informasi terbaru! Ditunggu ordernya ya!
+                    </p>
+                </div>
+                <div class="social-icon">
+                    <ul class="nav-menu-social-media">
+                        <li>
+                            <a href="https://www.facebook.com/widya.va.9" target="_blank" rel="noopener" aria-label="Follow on Facebook">
+                                <i class='bx bxl-facebook-circle'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/wd.official.id" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@wdparfume1" target="_blank" rel="noopener" aria-label="Follow on TikTok">
+                                <i class='bx bxl-tiktok'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://shopee.co.id/widyaraesa" target="_blank" rel="noopener" aria-label="Follow on Shopee">
+                                <i class='bx bx-shopping-bag'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-info">
+                <div class="footer-navigation-wrapper">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <a href="../../pages/contact.html" class="footer-link" aria-label="Contact">
+                                Contact<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/62?text=Halo,%20Kak." target="_blank" class="footer-link" rel="noopener" aria-label="WhatsApp">
+                                WhatsApp<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-navigation-wrapper">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li>
+                            <a href="https://shopee.co.id/widyaraesa" target="_blank" class="footer-link" rel="noopener" aria-label="Shopee">
+                                Shopee<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@wdparfume1" target="_blank" class="footer-link" rel="noopener" aria-label="Tiktok Shop">
+                                TikTok Shop<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-navigation-wrapper">
+                    <h4>Media Sosial</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/widya.va.9" target="_blank" class="footer-link" rel="noopener" aria-label="Facebook">
+                                Facebook<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/wd.official.id" target="_blank" class="footer-link" rel="noopener" aria-label="Instagram">
+                                Instagram<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@wdparfume1" target="_blank" class="footer-link" rel="noopener" aria-label="TikTok">
+                                TikTok<i class='bx bx-link-external'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot-copy">
+            <p>&copy; 2024 WD Parfume.</p>
+        </div>
+    </footer>
+    <!-- END OF FOOTER -->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/products.js"></script>
+    <script src="../../assets/js/slider.js"></script>
+
+    <!-- GSAP (ANIMATION) -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- LENIS (SMOOTH ON SCROLL) -->
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    
+</body>
+
+</html>

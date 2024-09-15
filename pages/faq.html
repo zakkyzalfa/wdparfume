@@ -60,7 +60,7 @@
     <header class="navigation-bar">
         <div class="logo-wrapper">
             <a href="../index.html" class="logo">
-                <img src="../assets/images/wd-logo.png" alt="WD Parfume Logo">
+                <img src="../assets/images/wd-logo.webp" alt="WD Parfume Logo">
             </a>
         </div>
         <div class="main-navigation">
@@ -72,7 +72,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="products.html" aria-label="Products" id="nav-product">
+                        <a href="products.html" class="active" aria-label="Products" id="nav-product">
                             Products
                         </a>
                     </li>
@@ -82,47 +82,23 @@
                         </a>
                     </li>
                     <li>
-                        <a href="faq.html" class="active" aria-label="Update" id="nav-update">
+                        <a href="faq.html" aria-label="faq" id="nav-faq">
                             FAQ
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div class="panel-footer">
-                <ul class="nav-menu-social-media">
-                    <li>
-                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on Facebook">
-                            <i class='bx bxl-facebook-circle'></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on Instagram">
-                            <i class='bx bxl-instagram'></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on TikTok">
-                            <i class='bx bxl-tiktok'></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" rel="noopener" aria-label="Follow on Shopee">
-                            <i class='bx bx-shopping-bag'></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
         <div class="nav-icon"> <!--right navbar-->
-
+        
             <a href="contact.html" aria-label="Contact">
                 <i class='bx bx-phone'></i>
             </a>
-
+               
             <div class="search-icon">
                 <i class="bx bx-search" id="search-button"></i>
             </div>
-
+            
             <div class="menu-icon">
                 <i class="bx bx-menu-alt-right" id="menu-icon"></i>
             </div>
@@ -138,6 +114,45 @@
             </form>
             <div class="search-box2" data-lenis-prevent>
                 <!-- displaySearchReasult akan ditampilkan disini oleh javascript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU BOX -->
+    <div id="overlay-menu"></div>
+    <div class="menu-box" id="menu-content">
+        <div class="wrapper-menu-box">
+            <ul class="nav-menu-mobile">
+                <li>
+                    <a href="../index.html" class="navlink active" aria-label="Home" id="nav-home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html" class="navlink" aria-label="Products" id="nav-product">
+                        Products
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="navlink" aria-label="About us" id="nav-contact">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html" class="navlink" aria-label="faq" id="nav-faq">
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="navlink" aria-label="contact" id="nav-contact">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper-close-button">
+            <div class="close-circle-button">
+                <i class="bx bx-x close" id="menu-close"></i>
             </div>
         </div>
     </div>
@@ -173,28 +188,6 @@
         </div>
     </div> -->
     <!-- END OF ANNOUNCEMENT BAR -->
-
-    <!-- TOP PAGE SECTION -->
-    <!-- <section class="top-page">
-        <div class="top-page-wrapper">
-            <h3>Extrait De Parfume</h3>
-            <h1>WD PARFUME</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos aperiam obcaecati minima sapiente
-                rerum enim officiis, omnis exercitationem architecto!
-            </p>
-            <p>Lihat Selengkapnya..</p>
-            <div class="center-button">
-                <a href="#" class="main-button" aria-label="About us">
-                    About us <i class='bx bx-down-arrow-alt'></i>
-                </a>
-            </div>
-        </div>
-    </section> -->
-    <!-- END OF TOP PAGE SECTION-->
-
-    <!-- <div class="section-separator">
-        <hr class="separator">
-    </div> -->
 
     <!-- FAQ SECTION -->
     <section class="faq">
@@ -420,14 +413,13 @@
     </section>
     <!-- END OF FAQ SECTION -->
 
-
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-info-wrapper">
             <div class="first-info">
                 <div class="logo-wrapper-footer">
                     <a href="../index.html" class="logo-footer">
-                        <img src="../assets/images/wd-logo.png" alt="WD Parfume Logo">
+                        <img src="../assets/images/wd-logo.webp" alt="WD Parfume Logo">
                     </a>
                 </div>
                 <ul class="navmenu-footer">
@@ -437,25 +429,25 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../pages/products.html" class="footer-link" aria-label="Products"
+                        <a href="products.html" class="footer-link" aria-label="Products"
                             id="nav-product">
                             Products
                         </a>
                     </li>
                     <li>
-                        <a href="../pages/about.html" class="footer-link" aria-label="About us" id="nav-contact">
+                        <a href="about.html" class="footer-link" aria-label="About us" id="nav-contact">
                             About us
                         </a>
                     </li>
                     <li>
-                        <a href="../pages/faq.html" class="footer-link" aria-label="Update" id="nav-update">
+                        <a href="faq.html" class="footer-link" aria-label="Update" id="nav-update">
                             FAQ
                         </a>
                     </li>
                 </ul>
                 <div class="footer-text">
                     <p>
-                        Terima kasih telah berkunjung ke website wd parfume! Jangan ragu untuk menghubungi kami atau ikuti media sosial untuk mendapatkan informasi terbaru! Ditunggu ordernya ya!
+                        Terima kasih telah berkunjung ke website WD Parfume! Jangan ragu untuk menghubungi kami atau ikuti media sosial untuk mendapatkan informasi terbaru! Ditunggu ordernya ya!
                     </p>
                 </div>
                 <div class="social-icon">
@@ -488,7 +480,7 @@
                     <h4>Contact</h4>
                     <ul>
                         <li>
-                            <a href="../pages/contact.html" class="footer-link" aria-label="Contact">
+                            <a href="contact.html" class="footer-link" aria-label="Contact">
                                 Contact<i class='bx bx-link-external'></i>
                             </a>
                         </li>

@@ -1,6 +1,6 @@
 /*=========== FOOTER ============*/
 .footer {
-    background-color: var(--color-grey-light);
+    background-color: var(--color-soft-blueish-white);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -103,7 +103,7 @@
     gap: 1em;
     font-family: var(--font-jost);
     font-weight: 500;
-    color: var(--color-grey);
+    color: var(--color-black-dark);
     text-transform: capitalize;
     line-height: 1.5;
     cursor: pointer;
@@ -127,7 +127,7 @@
     white-space: nowrap;
     overflow: hidden;
     background-color: transparent;
-    color: var(--color-grey);
+    color: var(--color-black-dark);
     text-transform: capitalize;
     line-height: 1.5;
     text-align: center;

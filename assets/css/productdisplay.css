@@ -71,9 +71,14 @@
     -webkit-box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
             box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
+.dropdown-text {
+    font-weight: 500;
+}
 .dropdown-content a {
     color: var(--color-black-dark);
-    font-weight: 600;
+    font-family: var(--font-jost);
+    font-size: var(--font-size-p);
+    font-weight: 500;
     padding: 1rem;
     text-decoration: none;
     display: block;
@@ -137,7 +142,7 @@
     gap: 0.8em;
 }
 .link-product:hover {
-    /* background-color: rgba(0, 0, 0, 0.04); */
+    background: transparent;
 }
 .product-image {
     position: relative;
@@ -175,10 +180,10 @@
     color: var(--color-black-dark);
 }
 .product-specifications h3 {
-    font-weight: 400;
+    font-weight: 500;
 }
 .product-specifications p {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 /* label */

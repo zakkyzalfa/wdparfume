@@ -51,7 +51,7 @@
     font-weight: 500;
 }
 .banner-content h1 {
-    color: #000;
+    color: var(--color-black-dark);
     font-size: clamp(24px, 6.5vw, 65px);
     text-transform: capitalize;
     line-height: 1.1;
@@ -61,7 +61,7 @@
 }
 .banner-content p {
     max-width: clamp(250px, 40vw, 400px);
-    color: #151515;
+    color: var(--color-black-dark);
     font-size: clamp(14px, 2vw, 20px);
     font-style: italic;
     margin-bottom: 20px;
@@ -146,7 +146,7 @@
 }
 .mobile-main-text h1 {
     text-align: center;
-    color: #000;
+    color: var(--color-black-dark);
     font-size: 40px;
     text-transform: capitalize;
     line-height: 1.1;
@@ -155,7 +155,7 @@
 }
 .mobile-main-text p{
     text-align: center;
-    color: #151515;
+    color: var(--color-black-dark);
     font-size: 20px;
     font-style: italic;
     margin-top: 20px;

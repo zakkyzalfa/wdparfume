@@ -4,11 +4,15 @@
     --color-black-light: #393939; 
     --color-black-medium: #2C2C2C;
     --color-black-dark: #000000;
-    --color-white: #FFFFFF;
+    --color-white: #fffffc;
     --color-grey-dark: #707070;
     --color-grey: #565656;
     --color-grey-medium: rgb(204 204 204);
-    --color-grey-light: rgb(242 242 242);
+    --color-grey-light: #F5F5F5;
+    --color-soft-blueish-white: #F0F4F8;
+    --color-off-white: #FAF9F6;
+    --color-ivory: #FFFFF0;
+    /* --color-grey-light: rgb(242 242 242); */
     /* --color-grey-light: #F3F4F6; */
     --color-ruby: #EE1C47;
     --color-gold: #FFBF00;
@@ -58,6 +62,7 @@ body {
     font-weight: 400;
     font-size: var(--font-size-p);
     color: var(--color-black-dark);
+    /* background: linear-gradient(to bottom, #FFFFFF, #fff8f9); */
     background-color: var(--color-white);
     height: 100%;
     overflow-y: scroll;
@@ -129,17 +134,28 @@ footer {
     padding: 5% 6%;
 }
 .section-separator {
-    /* margin-top: 1.5rem;
-    margin-bottom: 1.5rem; */
+    margin: none;
 }
 .separator {
-    color: var(--color-line);
+    color: var(--color-black-dark);
     border-top-width: 1px;
     height: 0;
 }
 .mobile-only {
     display: none;
     width: 100%;
+}
+.feature {
+    background-color: transparent;
+}
+.call-to-action {
+    background-color: var(--color-off-white);
+}
+.update-news {
+    background-color: transparent;
+}
+.mwt-slider {
+    background-color: var(--color-off-white);
 }
 
 
@@ -181,7 +197,7 @@ footer {
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
-    background-color: var(--color-black);
+    background-color: var(--color-black-dark);
     color: var(--color-white);
     display: -ms-grid;
     display: grid;
@@ -201,7 +217,7 @@ footer {
 }
 .button-buy.wt:hover .circle {
     background-color: var(--color-gold);
-    color: var(--color-black);
+    color: var(--color-black-dark);
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
@@ -297,7 +313,7 @@ footer {
     width: 100%;
 }
 .button-buy {
-    width: 85%;
+    width: 80%;
     position: relative;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -315,6 +331,8 @@ footer {
     border-radius: 100px;
     border: var(--color-black-dark) 2px solid;
     background-color: var(--color-white);
+    font-size: var(--font-size-p);
+    font-family: var(--font-jost);
     line-height: 1em;
     font-weight: 600;
     padding: 1rem 2rem;
@@ -589,14 +607,10 @@ footer {
 }
 .top-page p{
     color: var(--color-black-dark);
-    font-style: italic;
 }
 /*============ END OF TOP PAGE =============*/
 
 /*============ CALL TO ACTION ==============*/
-.call-to-action {
-    background-color: var(--color-grey-light);
-}
 .call-to-action-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -636,9 +650,6 @@ footer {
 /*========== END OF CALL TO ACTION =========*/
 
 /*========== FEATURE SECTION ==========*/
-.feature {
-    background-color: var(--color-white);
-}
 .feature-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -688,9 +699,6 @@ footer {
 /*========== END OF FEATURE SECTION =========*/
 
 /*========== MEDIA WITH TEXT SLIDER ==========*/
-.mwt-slider {
-    background-color: var(--color-grey-light);
-}
 .mwt-slider-container {
     display: -ms-grid;
     display: grid;
@@ -738,7 +746,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 1rem;
-    background: var(--color-grey-light);
+    background: transparent;
     color: var(--color-black-dark);
     overflow-y: hidden;
     min-width: 100%;
@@ -887,7 +895,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 1rem;
-    background: var(--color-grey-light);
+    background: var(--color-off-white);
     color: var(--color-black-dark);
     overflow-y: hidden;
     min-height: 100%;
@@ -984,7 +992,7 @@ footer {
     grid-area: content;
     display: -ms-grid;
     display: grid;
-    background: var(--color-grey-light);
+    background: var(--color-off-white);
     color: var(--color-black-dark);
 }
 .mwt-text-content-center {
@@ -1342,7 +1350,7 @@ footer {
 }
 .faq-accordion {
     width: 60%;
-    background-color: var(--color-grey-light);
+    background-color: var(--color-off-white);
 }
 .faq-accordion-wrapper {
     display: -webkit-box;
@@ -1391,7 +1399,8 @@ footer {
 }
 .accordion-header-text {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: var(--font-jost);
 }
 .accordion-header:hover .circle-chevron {
     background-color: var(--color-black-dark);

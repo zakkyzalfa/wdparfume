@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 scale: 1
             }, {
                 scale: 1.2,
-                duration: 10, // Durasi zoom in
+                duration: 20, // Durasi zoom in
                 ease: "none"
             }, "<"); // "<" memastikan animasi zoom in dimulai bersamaan dengan fade-in
         }
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             scale: 1
         }, {
             scale: 1.2,
-            duration: 10, // Durasi zoom in
+            duration: 20, // Durasi zoom in
             ease: "none"
         });
 
@@ -88,8 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const images3Row = new Swiper('.images-3-row', {
         slidesPerView: 3, // 3 images on desktop
         spaceBetween: 5, // Space between images
-        freeMode: true,
-        freeModeSticky: true,
         breakpoints: {
             890: {
                 slidesPerView: 3, // 2 images on mobile
@@ -109,8 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const images2Row = new Swiper('.images-2-row', {
         slidesPerView: 2, // 3 images on desktop
         spaceBetween: 5, // Space between images
-        freeMode: true,
-        freeModeSticky: true,
         breakpoints: {
             640: {
                 slidesPerView: 2, // 2 images on mobile
@@ -339,8 +335,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const gallerySlider = new Swiper('.gallery-slider', {
         spaceBetween: 15,
         effect: 'slide',
-        freeMode: true,
-        freeModeSticky: true,
         loop: false,
         navigation: {
             nextEl: '.gallery-slider-button-next',

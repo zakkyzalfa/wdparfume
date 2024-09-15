@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Initialize Swiper
         const swiper = new Swiper(containerSelector, {
             slidesPerView: 4,
-            //spaceBetween: 20,
+            spaceBetween: 20,
             effect: 'slide',
             loop: false,
             navigation: {
@@ -302,15 +302,15 @@ document.addEventListener('DOMContentLoaded', () => {
             breakpoints: {
                 0: {
                     slidesPerView: 2,
-                    //spaceBetween: 20,
+                    spaceBetween: 10,
                 },
                 768: {
                     slidesPerView: 3,
-                    //spaceBetween: 30,
+                    spaceBetween: 10,
                 },
                 1024: {
                     slidesPerView: 4,
-                    //spaceBetween: 40,
+                    spaceBetween: 15,
                 },
             }
         });

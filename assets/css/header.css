@@ -100,6 +100,8 @@
         -ms-flex-align: center;
             align-items: center;
     gap: 2em;
+    font-family: var(--font-jost);
+    font-weight: 400;
 }
 .nav-menu-social-media a i {
     color: var(--color-black-dark);
@@ -552,7 +554,7 @@ body.dark-theme.page-with-hero-section .navigation-bar.scrolled {
         -webkit-transition: .4s;
         -o-transition: .4s;
         transition: .4s;
-        height: 60px;
+        height: 55px;
         position: fixed;
         border-bottom: 1px solid var(--color-grey-medium);
         -webkit-box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);

@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.from(feature.querySelectorAll('.heading h1, .heading h3, .images-box img, .text p'), {
             scrollTrigger: {
                 trigger: feature,
-                start: 'top 80%',
+                start: 'top 100%',
                 toggleActions: 'play none none none',
             },
             opacity: 0,
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.from('.mwt-slider-container', {
             scrollTrigger: {
                 trigger: '.mwt-slider',
-                start: 'top 80%',
+                start: 'top 100%',
                 toggleActions: 'play none none none',
             },
             opacity: 0,
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.from('.media-with-text-wrapper', {
             scrollTrigger: {
                 trigger: '.media-with-text-wrapper',
-                start: 'top 80%',
+                start: 'top 100%',
                 toggleActions: 'play none none none',
             },
             opacity: 0,
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.from('.heading-center h2, .heading-center p', {
             scrollTrigger: {
                 trigger: '.heading-center',
-                start: 'top 80%',
+                start: 'top 100%',
                 toggleActions: 'play none none none',
             },
             opacity: 0,
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.from(container, {
                 scrollTrigger: {
                     trigger: container,       // Setiap elemen memiliki trigger-nya sendiri
-                    start: 'top 75%',         // Animasi dimulai ketika elemen terlihat 75% di viewport
+                    start: 'top 100%',         // Animasi dimulai ketika elemen terlihat 100% di viewport
                     toggleActions: 'play none none none',
                 },
                 opacity: 0,                 // Awal opacity 0 untuk fade-in effect
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.to('.call-to-action-wrapper', {
             scrollTrigger: {
                 trigger: '.call-to-action',
-                start: 'top 80%',
+                start: 'top 100%',
                 toggleActions: 'play none none none',
             },
             opacity: 1,
@@ -320,7 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.from('.call-to-action-wrapper h2', {
             scrollTrigger: {
                 trigger: '.call-to-action',
-                start: 'top 80%',
+                start: 'top 100%',
                 toggleActions: 'play none none none',
             },
             opacity: 0,
@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.from('.call-to-action-wrapper .center-image img', {
             scrollTrigger: {
                 trigger: '.call-to-action',
-                start: 'top 80%',
+                start: 'top 100%',
                 toggleActions: 'play none none none',
             },
             opacity: 0,
@@ -344,7 +344,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.from('.call-to-action-wrapper p', {
             scrollTrigger: {
                 trigger: '.call-to-action',
-                start: 'top 80%',
+                start: 'top 100%',
                 toggleActions: 'play none none none',
             },
             opacity: 0,
@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.from('.call-to-action-wrapper .center-button', {
             scrollTrigger: {
                 trigger: '.call-to-action',
-                start: 'top 80%',
+                start: 'top 100%',
                 toggleActions: 'play none none none',
             },
             opacity: 0,
@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.from(productSlider.querySelectorAll('.products-heading h2, .products-heading h3, .products-heading a'), {
                 scrollTrigger: {
                     trigger: productSlider,
-                    start: 'top 85%',
+                    start: 'top 100%',
                     toggleActions: 'play none none none',
                 },
                 opacity: 0,
@@ -391,7 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 gsap.from(sliderContainers, {
                     scrollTrigger: {
                         trigger: productSlider,
-                        start: 'top 60%',
+                        start: 'top 100%',
                         toggleActions: 'play none none none',
                     },
                     opacity: 0,
@@ -403,7 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.from(productSlider.querySelectorAll('.pagination'), {
                 scrollTrigger: {
                     trigger: productSlider,
-                    start: 'top 40%',
+                    start: 'top 100%',
                     toggleActions: 'play none none none',
                 },
                 opacity: 0,
@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 gsap.from(headings, {
                     scrollTrigger: {
                         trigger: productList,
-                        start: 'top 85%',
+                        start: 'top 100%',
                         toggleActions: 'play none none none',
                     },
                     opacity: 0,
@@ -446,7 +446,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.from('.gallery', {
             scrollTrigger: {
                 trigger: '.gallery',
-                start: 'top 60%',
+                start: 'top 100%',
                 toggleActions: 'play none none none',
             },
             opacity: 0,
@@ -475,7 +475,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ease: "power2.out",
                     scrollTrigger: {
                         trigger: item,
-                        start: 'top 80%', // Mulai animasi ketika bagian atas elemen mencapai 80% dari viewport
+                        start: 'top 100%', // Mulai animasi ketika bagian atas elemen mencapai 100% dari viewport
                         toggleActions: 'play none none none', // Hanya memainkan animasi sekali
                         once: true, // Animasi hanya terjadi sekali
                     }
@@ -488,7 +488,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //     gsap.from('.logo-wrapper-footer', {
     //         scrollTrigger: {
     //             trigger: '.footer',
-    //             start: 'top 85%',
+    //             start: 'top 100%',
     //             toggleActions: 'play none none none',
     //         },
     //         opacity: 0,
@@ -502,7 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //     gsap.from('.navmenu-footer li', {
     //         scrollTrigger: {
     //             trigger: '.footer',
-    //             start: 'top 85%',
+    //             start: 'top 100%',
     //             toggleActions: 'play none none none',
     //         },
     //         opacity: 0,
@@ -517,7 +517,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //     gsap.from('.footer-text', {
     //         scrollTrigger: {
     //             trigger: '.footer',
-    //             start: 'top 85%',
+    //             start: 'top 100%',
     //             toggleActions: 'play none none none',
     //         },
     //         opacity: 0,
@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //     gsap.from('.social-icon li', {
     //         scrollTrigger: {
     //             trigger: '.footer',
-    //             start: 'top 85%',
+    //             start: 'top 100%',
     //             toggleActions: 'play none none none',
     //         },
     //         opacity: 0,
@@ -546,7 +546,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //     gsap.from('.footer-navigation-wrapper', {
     //         scrollTrigger: {
     //             trigger: '.footer',
-    //             start: 'top 85%',
+    //             start: 'top 100%',
     //             toggleActions: 'play none none none',
     //         },
     //         opacity: 0,
@@ -561,7 +561,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //     gsap.from('.foot-copy p', {
     //         scrollTrigger: {
     //             trigger: '.footer',
-    //             start: 'top 85%',
+    //             start: 'top 100%',
     //             toggleActions: 'play none none none',
     //         },
     //         opacity: 0,
@@ -691,7 +691,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ease: 'power2.out',
             scrollTrigger: {
                 trigger: '.feature-wrapper .heading',
-                start: 'top 80%',  // Memulai animasi ketika 80% elemen masuk viewport
+                start: 'top 100%',  // Memulai animasi ketika 100% elemen masuk viewport
                 end: 'top 50%',    // Mengakhiri animasi ketika elemen mencapai 50% dari viewport
                 toggleActions: 'play none none none', // Hanya memutar animasi saat muncul
             }
@@ -706,7 +706,7 @@ document.addEventListener('DOMContentLoaded', () => {
             stagger: 0.3, // Memberikan jeda antar animasi paragraf
             scrollTrigger: {
                 trigger: '.feature-wrapper .text',
-                start: 'top 80%',
+                start: 'top 100%',
                 end: 'top 50%',
                 toggleActions: 'play none none none',
             }
@@ -720,7 +720,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ease: 'power2.out',
             scrollTrigger: {
                 trigger: '.specification-container',
-                start: 'top 80%',
+                start: 'top 100%',
                 end: 'top 50%',
                 toggleActions: 'play none none none',
             }

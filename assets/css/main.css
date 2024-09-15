@@ -8,7 +8,8 @@
     --color-grey-dark: #707070;
     --color-grey: #565656;
     --color-grey-medium: rgb(204 204 204);
-    --color-grey-light: #F3F4F6;
+    --color-grey-light: rgb(242 242 242);
+    /* --color-grey-light: #F3F4F6; */
     --color-ruby: #EE1C47;
     --color-gold: #FFBF00;
     --color-green: #04ff00;
@@ -23,6 +24,8 @@
     --font-notojp: 'Noto Sans JP', sans-serif;
     --font-jost: 'Jost', sans-serif;
     --font-garamond: "EB Garamond", serif;
+    --font-roboto-condensed: "Roboto Condensed", sans-serif;
+    --font-inter: "Inter", sans-serif;
 
     --font-size-title-big: clamp(25px, 5vw, 40px);
     --font-size-title-small: clamp(20px, 4vw, 30px);
@@ -46,13 +49,12 @@
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: var(--font-jost);
     list-style: none;
     text-decoration: none;
 }
 body {
     text-align: left;
-    font-family: var(--font-jost);
+    font-family: var(--font-roboto-condensed);
     font-weight: 400;
     font-size: var(--font-size-p);
     color: var(--color-black-dark);
@@ -68,24 +70,39 @@ hr {
 }
 h1 {
     font-size: var(--font-size-h1);
+    font-family: var(--font-jost);
+    font-weight: 500;
 }
 h2 {
     font-size: var(--font-size-h2);
+    font-family: var(--font-jost);
+    font-weight: 400;
 }
 h3 {
     font-size: var(--font-size-h3);
+    font-family: var(--font-jost);
+    font-weight: 400;
 }
 h4 {
     font-size: var(--font-size-h4);
+    font-family: var(--font-jost);
+    font-weight: 400;
 }
 h5 {
     font-size: var(--font-size-h5);
+    font-family: var(--font-jost);
+    font-weight: 400;
 }
 h6 {
     font-size: var(--font-size-h6);
+    font-family: var(--font-jost);
+    font-weight: 400;
 }
 p {
-    font-size: var(--font-size-p);  
+    font-size: var(--font-size-p);
+    font-family: var(--font-jost);
+    font-weight: 400;
+    line-height: 1.5rem;
 }
 /*=============== END OF BASE ===============*/
 
@@ -102,7 +119,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     gap: 2rem;
-    padding: 5% 10%;
+    padding: 5% 4.6875vw;
     overflow: hidden;
 }
 .full-width {
@@ -112,8 +129,8 @@ footer {
     padding: 5% 6%;
 }
 .section-separator {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    /* margin-top: 1.5rem;
+    margin-bottom: 1.5rem; */
 }
 .separator {
     color: var(--color-line);
@@ -223,7 +240,7 @@ footer {
     border: 2px solid var(--color-black-dark);
     color: var(--color-black-dark);
     font-size: var(--font-size-button);
-    font-weight: bold;
+    font-weight: 600;
     line-height: 1em;
     text-align: center;
     -webkit-user-select: none;
@@ -245,16 +262,16 @@ footer {
 
 
 .more-button {
-    color: #516677;
+    color: var(--color-black-dark);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 14px;
+    gap: 1rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: var(--font-size-p);
+    font-weight: 400;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -299,7 +316,7 @@ footer {
     border: var(--color-black-dark) 2px solid;
     background-color: var(--color-white);
     line-height: 1em;
-    font-weight: bold;
+    font-weight: 600;
     padding: 1rem 2rem;
     text-align: center;
     -webkit-user-select: none;
@@ -396,7 +413,7 @@ footer {
             flex-direction: column;
     gap: 1em;
     color: var(--color-black-dark);
-    font-weight: bold;
+    font-weight: 600;
 }
 .heading-center {
     display: -webkit-box;
@@ -516,7 +533,7 @@ footer {
 .announcement-bar-item p {
     font-size: clamp(0.75rem, 1vw, 1rem);
     line-height: 1.7;
-    font-weight: bold;
+    font-weight: 400;
 }
 @-webkit-keyframes left-move {
     0% {
@@ -557,13 +574,13 @@ footer {
 }
 .top-page h4 {
     color: var(--color-gold);
-    font-weight: bold;
+    font-weight: 400;
 }
 .top-page h1 {
     color: var(--color-black-dark);
     text-transform: capitalize;
     line-height: 1.1;
-    font-weight: bold;
+    font-weight: 500;
 }
 .top-page p{
     color: var(--color-black-dark);
@@ -590,12 +607,12 @@ footer {
     color: var(--color-black-dark);
     text-transform: capitalize;
     line-height: 1.1;
-    font-weight: bold;
+    font-weight: 500;
 }
 .call-to-action-wrapper h3 {
     color: var(--color-black-dark);
     text-transform: capitalize;
-    font-weight: bold;
+    font-weight: 400;
 }
 .call-to-action-wrapper img {
     width: 100px;
@@ -604,12 +621,11 @@ footer {
 }
 .call-to-action-wrapper p {
     color: var(--color-black-dark);
-    font-weight: 400;
     line-height: 25px;
 }
 .call-to-action-wrapper h2 {
     color: var(--color-black-dark);
-    font-weight: bold;
+    font-weight: 500;
     text-transform: capitalize;
 }
 /*========== END OF CALL TO ACTION =========*/
@@ -797,9 +813,9 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), color-stop(40%, rgba(0, 0, 0, 0)));
-    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 40%);
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 40%);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(40%, rgba(0, 0, 0, 0)));
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 40%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 40%);
     z-index: 2;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -822,13 +838,13 @@ footer {
 }
 .overlay-text-1 {
     font-size: 20px;
-    font-family: "EB Garamond", serif;
+    font-family: var(--font-jost);
     font-weight: 400;
 }
 .overlay-text-2 {
-    font-size: 50px;
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
+    font-size: 40px;
+    font-family: var(--font-jost);
+    font-weight: 500;
 }
 .mwt-slider-wrapper-2, .mwt-slider-wrapper-3, .mwt-slider-wrapper-4 {
     grid-area: media;
@@ -998,8 +1014,7 @@ footer {
     text-align: center;
     color: var(--color-black-dark);
     text-transform: capitalize;
-    font-weight: 700;
-    margin-bottom: 30px;
+    font-weight: 500;
 }
 .update-card-instagram {
     display: -ms-grid;
@@ -1035,23 +1050,18 @@ footer {
     color: var(--color-grey-dark);
     font-size: 14px;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 400;
 }
 .card-instagram h4 {
     color: var(--color-black-dark);
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .card-instagram p {
     color: var(--color-grey-dark);
-    font-size: 15px;
-    line-height: 25px;
-    margin-bottom: 12px;
 }
 .card-instagram h6 {
     color: var(--color-black-dark);
-    font-size: 14px;
-    font-weight: 500;
 }
 .instagram-embed {
     max-width: 100%;
@@ -1355,7 +1365,7 @@ footer {
 }
 .accordion-header-text {
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 .accordion-header:hover .circle-chevron {
     background-color: var(--color-black-dark);
@@ -1363,7 +1373,7 @@ footer {
 }
 .accordion-header i {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 400;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1427,7 +1437,7 @@ footer {
     content: "-";
     margin-right: 10px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
     color: var(--color-black-dark);
     line-height: 1.5;
 }
@@ -1438,7 +1448,7 @@ footer {
 /* TABLET LANDSCAPE */
 @media (max-width: 768px) {
     section, footer {
-        padding: 10% 5%;
+        padding: 10% 5vw;
     }
     .header-height {
         padding-top: 60px;
@@ -1649,7 +1659,7 @@ footer {
         width: 100%;
         height: 100%;
     }
-    .overlay-text-1 {
+    /* .overlay-text-1 {
         font-size: 20px;
         font-family: "EB Garamond", serif;
         font-weight: 400;
@@ -1658,6 +1668,6 @@ footer {
         font-size: 40px;
         font-family: "EB Garamond", serif;
         font-weight: 400;
-    }
+    } */
 }
 /*========= END OF RESPONSIVE BREAKPOINT ==========*/

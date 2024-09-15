@@ -48,13 +48,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 60px;
 }
 .logo-footer {
-    width: 150px;
-    height: 60px;
-    max-width: 150px;
-    max-height: 60px;
+    max-width: 120px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -105,7 +101,8 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 1em;
-    font-weight: bold;
+    font-family: var(--font-jost);
+    font-weight: 500;
     color: var(--color-grey);
     text-transform: capitalize;
     line-height: 1.5;
@@ -137,6 +134,7 @@
     -webkit-transition: all .42s ease;
     -o-transition: all .42s ease;
     transition: all .42s ease;
+    font-family: var(--font-jost);
 }
 .footer-link:hover {
     color: var(--color-ruby);

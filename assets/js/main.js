@@ -54,13 +54,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* NAVBAR KETIKA DI MOBILE (RESPONSIVE) */
     const menuIcon = document.getElementById('menu-icon');
-    const navMenu = document.querySelector('.main-navigation');
+    const menuContent = document.getElementById('menu-content');
+    const overlayMenu = document.getElementById('overlay-menu');
+    const menuClose = document.getElementById('menu-close');
 
-    if (menuIcon && navMenu) {
-        menuIcon.onclick = () => {
-            menuIcon.classList.toggle('bx-x');
-            navMenu.classList.toggle('open');
-        };
+    // Cek apakah elemen ada
+    if (menuIcon && menuContent && overlayMenu && menuClose) {
+        // Klik ikon menu untuk membuka menu
+        menuIcon.addEventListener('click', function () {
+            console.log('Menu icon clicked'); // Debug
+            overlayMenu.classList.add('show-overlay-menu'); // Tampilkan overlay
+            menuContent.classList.add('show-menu'); // Tampilkan menu-box
+            document.body.classList.add('lock'); // Kunci body scroll
+            window.lenisMain.stop(); // Menghentikan scroll animasi jika diperlukan
+        });
+
+        // Klik tombol close untuk menutup menu
+        menuClose.addEventListener('click', function () {
+            console.log('Close button clicked'); // Debug
+            overlayMenu.classList.remove('show-overlay-menu'); // Sembunyikan overlay
+            menuContent.classList.remove('show-menu'); // Sembunyikan menu-box
+            document.body.classList.remove('lock'); // Buka kembali body scroll
+            window.lenisMain.start(); // Mulai kembali scroll animasi
+        });
     }
 
     // ACCORDION PRODUCT

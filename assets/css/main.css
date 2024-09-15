@@ -76,7 +76,7 @@ h1 {
 h2 {
     font-size: var(--font-size-h2);
     font-family: var(--font-jost);
-    font-weight: 400;
+    font-weight: 500;
 }
 h3 {
     font-size: var(--font-size-h3);
@@ -447,6 +447,11 @@ footer {
 }
 .heading h2 {
     line-height: 1.3em;
+    color: var(--color-black-dark);
+}
+.heading p {
+    max-width: 50%;
+    line-height: 1.5rem;
     color: var(--color-black-dark);
 }
 .text {
@@ -1190,6 +1195,27 @@ footer {
         -ms-transform: scale(1.1);
             transform: scale(1.1);
 }
+
+.close-circle-button {
+    background-color: var(--color-white);
+    font-size: 1rem;
+    color: var(--color-black-dark);
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0 !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+    z-index: 10;
+    user-select: none;
+    transition: transform 1.5s cubic-bezier(.22,1,.36,1);
+}
+.close-circle-button:hover {
+    transform: scale(1.1);
+}
 /*============ END OF PAGINATION =============*/
 
 /*============ DEFAULT SWIPER JS ============*/
@@ -1595,6 +1621,11 @@ footer {
 }
 /* SMARTPHONE STANDART */
 @media (max-width: 640px) {
+    .heading p {
+        max-width: 100%;
+        line-height: 1.5rem;
+        color: var(--color-black-dark);
+    }
     .content-about {
         padding: 0;
     }

@@ -102,8 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
             searchBox2.innerHTML = `
                 <div class="preview-product-info-wrapper">
                     <div class="preview-product-info">
-                        <h5>Produk Tidak di Temukan</h5>
-                        <h6>Produk tidak ada</h6>
+                        <h4>Produk Tidak di Temukan</h4>
+                        <h5>Produk tidak ada</h5>
                     </div>
                 </div>
             `;
@@ -119,9 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="preview-product-info-container">
                             <div class="preview-product-info-wrapper">
                                 <div class="preview-product-info">
-                                    <h6>${product.category}</h6>
-                                    <h5>${product.name}</h5>
-                                    <h6>Rp. ${formatPrice(product.price)},-</h6>
+                                    <h4>${product.category}</h4>
+                                    <h3>${product.name}</h3>
+                                    <h4>Rp. ${formatPrice(product.price)},-</h4>
                                 </div>
                             </div>
                         </div>    

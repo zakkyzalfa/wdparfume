@@ -68,10 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // PC SCREEN HERO SECTION SLIDER
     const swiper = new Swiper('.banner-container', {
         loop: true, // Pengulangan otomatis
-        // autoplay: {
-        //     delay: 4000, // Durasi antara slide
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 4000, // Durasi antara slide
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

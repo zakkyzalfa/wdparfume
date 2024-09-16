@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const baseURL = window.location.hostname === "zakkyzalfa.github.io" ? "/wdparfume" : "";
+    const isGitHubPages = window.location.hostname.includes("github.io");
+    const baseURL = isGitHubPages ? "/wdparfume" : "";
 
     const products = [
         { name: `My Ombre Unisex`, price: 165000, image: `${baseURL}/assets/images/products/my-ombre-unisex-2.webp`, link: `${baseURL}/pages/products/myOmbre.html`, category: `unisex`, labels: ["Populer"] },

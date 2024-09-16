@@ -500,93 +500,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // if (document.querySelector('.logo-wrapper-footer')) {
-    //     gsap.from('.logo-wrapper-footer', {
-    //         scrollTrigger: {
-    //             trigger: '.footer',
-    //             start: 'top 100%',
-    //             toggleActions: 'play none none none',
-    //         },
-    //         opacity: 0,
-    //         y: 20,
-    //         duration: 1,
-    //         ease: 'power2.out',
-    //     });
-    // }
-
-    // if (document.querySelector('.navmenu-footer li')) {
-    //     gsap.from('.navmenu-footer li', {
-    //         scrollTrigger: {
-    //             trigger: '.footer',
-    //             start: 'top 100%',
-    //             toggleActions: 'play none none none',
-    //         },
-    //         opacity: 0,
-    //         y: 20,
-    //         duration: 0.8,
-    //         stagger: 0.1,  // Memberikan jeda antara setiap item list
-    //         ease: 'power2.out',
-    //     });
-    // }
-
-    // if (document.querySelector('.footer-text')) {
-    //     gsap.from('.footer-text', {
-    //         scrollTrigger: {
-    //             trigger: '.footer',
-    //             start: 'top 100%',
-    //             toggleActions: 'play none none none',
-    //         },
-    //         opacity: 0,
-    //         y: 20,
-    //         duration: 1,
-    //         ease: 'power2.out',
-    //     });
-    // }
-
-    // if (document.querySelector('.social-icon li')) {
-    //     gsap.from('.social-icon li', {
-    //         scrollTrigger: {
-    //             trigger: '.footer',
-    //             start: 'top 100%',
-    //             toggleActions: 'play none none none',
-    //         },
-    //         opacity: 0,
-    //         y: 20,
-    //         duration: 0.8,
-    //         stagger: 0.1,  // Ikon akan muncul satu per satu
-    //         ease: 'power2.out',
-    //     });
-    // }
-
-    // if (document.querySelector('.footer-navigation-wrapper')) {
-    //     gsap.from('.footer-navigation-wrapper', {
-    //         scrollTrigger: {
-    //             trigger: '.footer',
-    //             start: 'top 100%',
-    //             toggleActions: 'play none none none',
-    //         },
-    //         opacity: 0,
-    //         y: 20,
-    //         duration: 1,
-    //         stagger: 0.1,  // Bagian-bagian ini akan muncul satu per satu
-    //         ease: 'power2.out',
-    //     });
-    // }
-
-    // if (document.querySelector('.foot-copy p')) {
-    //     gsap.from('.foot-copy p', {
-    //         scrollTrigger: {
-    //             trigger: '.footer',
-    //             start: 'top 100%',
-    //             toggleActions: 'play none none none',
-    //         },
-    //         opacity: 0,
-    //         y: 20,
-    //         duration: 0.8,
-    //         ease: 'power2.out',
-    //     });
-    // }
-
     if (document.querySelector(".contact-description")) {
         gsap.from(".contact-description", {
             duration: 1.2,
@@ -660,6 +573,15 @@ document.addEventListener('DOMContentLoaded', () => {
             delay: 0.3           // Penundaan sebelum animasi dimulai
         });
 
+        gsap.from('.image-product-details', {
+            opacity: 0,
+            y: 20,
+            duration: 1,
+            ease: "power2.out",
+            stagger: 0.3, // Memberikan animasi secara berurutan
+            delay: 0.3
+        });
+
         // Animasi untuk setiap block-item dalam '.product-info-block-item' dengan animasi yang berurutan
         gsap.from('.product-info-block-item', {
             opacity: 0,
@@ -726,6 +648,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 end: 'top 50%',
                 toggleActions: 'play none none none',
             }
+        });
+
+        gsap.from(".accordion-content-list li", {
+            scrollTrigger: {
+                trigger: ".text",  // elemen yang memicu animasi saat digulir
+                start: "top 100%",  // memulai animasi ketika bagian atas elemen mencapai 80% dari viewport
+                toggleActions: "play none none none", // animasi hanya diputar ketika muncul, tidak diulangi
+            },
+            y: 20, // Animasi elemen bergerak ke atas
+            opacity: 0, // Dimulai dari opacity 0 (tersembunyi)
+            stagger: 0.2, // Menambahkan jeda antara animasi setiap elemen
+            duration: 1, // Durasi animasi tiap elemen
+            ease: "power2.out" // Kurva easing untuk efek lembut
         });
 
         // Animasi untuk tabel spesifikasi produk

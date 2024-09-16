@@ -1,21 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const products = [
-        { name: 'My Ombre Unisex', price: 165000, image: '/assets/images/products/my-ombre-unisex-2.webp', link: '/pages/products/myOmbre.html', category: 'unisex', labels: ["Populer"] },
-        { name: 'Lesables Unisex', price: 170000, image: '/assets/images/products/lesables-unisex-2.webp', link: '/pages/products/lesables.html', category: 'unisex', labels: ["Populer"] },
-        { name: 'Kiss Unisex', price: 175000, image: '/assets/images/products/kiss-unisex-2.webp', link: '/pages/products/kiss.html', category: 'unisex', labels: [] },
-        { name: 'Honey Unisex', price: 175000, image: '/assets/images/products/honey-unisex-2.webp', link: '/pages/products/honey.html', category: 'unisex', labels: [] },
-        { name: 'Bacca Top Unisex', price: 180000, image: '/assets/images/products/bacca-top-unisex-2.webp', link: '/pages/products/baccaTop.html', category: 'unisex', labels: [] },
-        { name: 'Black Opium Unisex', price: 155000, image: '/assets/images/products/black-opium-unisex-2.webp', link: '/pages/products/blackOpium.html', category: 'unisex', labels: [] },
-        { name: 'King Bal`s Unisex', price: 160000, image: '/assets/images/products/king-bals-unisex-2.webp', link: '/pages/products/kingBals.html', category: 'unisex', labels: [] },
-        { name: 'Delin Woman', price: 185000, image: '/assets/images/products/delin-woman-2.webp', link: '/pages/products/delin.html', category: 'woman', labels: ["Populer"] },
-        { name: 'MOY Woman', price: 175000, image: '/assets/images/products/moy-woman-2.webp', link: '/pages/products/moy.html', category: 'woman', labels: ["Populer"] },
-        { name: 'Rainbow Love Woman', price: 170000, image: '/assets/images/products/rainbow-love-woman-2.webp', link: '/pages/products/rainbowLove.html', category: 'woman', labels: [] },
-        { name: 'Princess Woman', price: 170000, image: '/assets/images/products/princess-woman-2.webp', link: '/pages/products/princess.html', category: 'woman', labels: [] },
-        { name: 'Queen of Rose Woman', price: 170000, image: '/assets/images/products/queen-of-rose-woman-2.webp', link: '/pages/products/queenOfRose.html', category: 'woman', labels: [] },
-        { name: 'Treesame Man', price: 140000, image: '/assets/images/products/treesame-man.webp', link: '/pages/products/treesame.html', category: 'man', labels: ["Populer"] },
+    const baseURL = window.location.hostname === "zakkyzalfa.github.io" ? "/wdparfume" : "";
 
-        { name: 'Brightening Body Lotion', price: 250000, image: '/assets/images/products/brightening-body-lotion.webp', link: '/pages/products/brighteningBodyLotion.html', category: 'body-lotion', labels: ["new"] },
+    const products = [
+        { name: `My Ombre Unisex`, price: 165000, image: `${baseURL}/assets/images/products/my-ombre-unisex-2.webp`, link: `${baseURL}/pages/products/myOmbre.html`, category: `unisex`, labels: ["Populer"] },
+        { name: `Lesables Unisex`, price: 170000, image: `${baseURL}/assets/images/products/lesables-unisex-2.webp`, link: `${baseURL}/pages/products/lesables.html`, category: `unisex`, labels: ["Populer"] },
+        { name: `Kiss Unisex`, price: 175000, image: `${baseURL}/assets/images/products/kiss-unisex-2.webp`, link: `${baseURL}/pages/products/kiss.html`, category: `unisex`, labels: [] },
+        { name: `Honey Unisex`, price: 175000, image: `${baseURL}/assets/images/products/honey-unisex-2.webp`, link: `${baseURL}/pages/products/honey.html`, category: `unisex`, labels: [] },
+        { name: `Bacca Top Unisex`, price: 180000, image: `${baseURL}/assets/images/products/bacca-top-unisex-2.webp`, link: `${baseURL}/pages/products/baccaTop.html`, category: `unisex`, labels: [] },
+        { name: `Black Opium Unisex`, price: 155000, image: `${baseURL}/assets/images/products/black-opium-unisex-2.webp`, link: `${baseURL}/pages/products/blackOpium.html`, category: `unisex`, labels: [] },
+        { name: `King Bal's Unisex`, price: 160000, image: `${baseURL}/assets/images/products/king-bals-unisex-2.webp`, link: `${baseURL}/pages/products/kingBals.html`, category: `unisex`, labels: [] },
+        { name: `Delin Woman`, price: 185000, image: `${baseURL}/assets/images/products/delin-woman-2.webp`, link: `${baseURL}/pages/products/delin.html`, category: `woman`, labels: ["Populer"] },
+        { name: `MOY Woman`, price: 175000, image: `${baseURL}/assets/images/products/moy-woman-2.webp`, link: `${baseURL}/pages/products/moy.html`, category: `woman`, labels: ["Populer"] },
+        { name: `Rainbow Love Woman`, price: 170000, image: `${baseURL}/assets/images/products/rainbow-love-woman-2.webp`, link: `${baseURL}/pages/products/rainbowLove.html`, category: `woman`, labels: [] },
+        { name: `Princess Woman`, price: 170000, image: `${baseURL}/assets/images/products/princess-woman-2.webp`, link: `${baseURL}/pages/products/princess.html`, category: `woman`, labels: [] },
+        { name: `Queen of Rose Woman`, price: 170000, image: `${baseURL}/assets/images/products/queen-of-rose-woman-2.webp`, link: `${baseURL}/pages/products/queenOfRose.html`, category: `woman`, labels: [] },
+        { name: `Treesame Man`, price: 140000, image: `${baseURL}/assets/images/products/treesame-man.webp`, link: `${baseURL}/pages/products/treesame.html`, category: `man`, labels: ["Populer"] },
+
+        { name: `Brightening Body Lotion`, price: 250000, image: `/assets/images/products/brightening-body-lotion.webp`, link: `/pages/products/brighteningBodyLotion.html`, category: `body-lotion`, labels: ["new"] },
     ];
 
     function formatPrice(price) {

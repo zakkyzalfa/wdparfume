@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const products = [
-        { name: 'My Ombre Unisex', price: 165000, image: '../assets/images/products/my-ombre-unisex-2.webp', link: '../../pages/products/myOmbre.html', category: 'unisex', labels: ["Populer"] },
+        { name: 'My Ombre Unisex', price: 165000, image: '../assets/images/products/my-ombre-unisex-2.webp', link: '../pages/products/myOmbre.html', category: 'unisex', labels: ["Populer"] },
         { name: 'Lesables Unisex', price: 170000, image: '../../assets/images/products/lesables-unisex-2.webp', link: '../../pages/products/lesables.html', category: 'unisex', labels: ["Populer"] },
         { name: 'Kiss Unisex', price: 175000, image: '../../assets/images/products/kiss-unisex-2.webp', link: '../../pages/products/kiss.html', category: 'unisex', labels: [] },
         { name: 'Honey Unisex', price: 175000, image: '../../assets/images/products/honey-unisex-2.webp', link: '../../pages/products/honey.html', category: 'unisex', labels: [] },
